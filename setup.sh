@@ -7,6 +7,12 @@ HOMEBREW_LINK='/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Home
 sudo apt update -y
 sudo apt upgrade -y
 sudo apt install vim git zsh
+
+echo "PRESS ENTER TO INSTALL zoxide"
+read
 sudo apt install zoxide
 
-echo $HOMEBREW_LINK
+echo "PRESS ENTER TO INSTALL homebrew"
+read
+
+eval $HOMEBREW_LINK
