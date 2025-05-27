@@ -135,7 +135,7 @@ vim.keymap.set("n", "<leader>jj", function()
 	vim.cmd("normal! " .. target_line .. "Gzt")
 end, { desc = "Move cursor 3/4 screen down and align to top" })
 
-vim.keymap.set("n", "<leader>jk", function()
+vim.keymap.set("n", "<leader>kk", function()
 	local current_line = vim.fn.line(".")
 	local win_height = vim.api.nvim_win_get_height(0)
 	local offset = math.floor(win_height * 0.75)
