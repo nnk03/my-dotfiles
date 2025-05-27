@@ -1,9 +1,29 @@
-allow_images=true
-image_size=64
-width=600
-height=200
-insensitive=true
-mode=drun,run
-columns=1
-padding:5
-lines=6
+# ────────────────────────────────────────────────
+# Wofi – main configuration
+# ────────────────────────────────────────────────
+
+# Show desktop apps (drun) and a plain command launcher (run)
+mode                 = drun,run
+
+# Enable icons/thumbnails
+allow_images         = true
+image_size           = 48           # px
+
+# Window geometry
+location             = center       # top / center / bottom
+width                = 640          # px
+height               = 420          # px
+columns              = 1
+lines                = 8
+
+# UX tweaks
+insensitive          = true         # case-insensitive search
+allow_markup         = true         # Pango markup if apps supply it
+hide_scroll          = false        # do not hide scrollbar for a cleaner look
+padding              = 8            # internal padding (px)
+
+# Terminal used when launching “run” entries that need one
+term                 = alacritty
+
+# Performance
+filter_rate          = 100          # ms; lower = snappier

@@ -1,46 +1,121 @@
-/* Notes below regarding the purpose of each setting is true to the best of my knowledge. */
+/* ────────────────────────────────────────────────
+   
+   ──────────────────────────────────────────────── */
 
+/* --- palette -------------------------------------------------------------- */
+@define-color bg0            #1e1e2e; /* bar / window background          */
+@define-color bg1            #313244; /* input / darker blocks            */
+@define-color bg2            #45475a; /* subtle separators                */
+@define-color fg0            #cdd6f4; /* primary text                     */
+@define-color accent         #89b4fa; /* active selection                 */
+@define-color accent-hover   #74c7ec; /* hover highlight                  */
+
+/* --- outer window --------------------------------------------------------- */
+/* window { */
+/*   margin: 20px; */
+/*   background: @bg0; */
+/*   border: 2px solid @accent; */
+/*   border-radius: 10px; */
+/* } */
+
+window {
+  margin: 15px;
+  border: 3px solid #89b4fa; /* same contrasting blue as search bar */
+  background-color: #1f1f1f;
+  border-radius: 10px;
+}
+
+/* --- search / input field ------------------------------------------------- */
 #input {
-	margin: 10px; /* how much padding there is around the input box */
-	border: none; /* border around the input box */
-	background-color: #453e3d; /* background color of the text input box itself */
-        color: #ffffff; /* text color as you type inside the input box */
+  margin: 10px;
+  border: 2px solid #89b4fa; /* bright blue contrasting border */
+  background-color: #453e3d;
+  color: #ffffff;
+  border-radius: 8px;
 }
 
-#inner-box {
-	margin: 5px;
-	border: none; /* horizontal bar that appears above the search results */
-	background-color: #1f1f1f; /* background color behind the search results */
-        color: #ffffff; /* text color of each search result */
-}
-
-#outer-box {
-	margin: 5px; /* margin between the outer edges of the main window and its contents inside */
-	border: none /* border around all the internal window components */
-	background-color: #1f1f1f; /* background color of entire inner window */
-
-}
-
-#text {
-	margin: 5px;
-	border: none; /* border around each individual item within the search results */
-	background-color: trans; /* background behind each individual item within the search results */
-        color: ffffff;
-}
+/* hide the default search icon */
+/* #input > image.left { */
+/*   -gtk-icon-transform: scaleX(0); */
+/* } */
 
 /* Remove the search icon */
 #input > image.left {
-        -gtk-icon-transform:scaleX(0);
+  -gtk-icon-transform: scaleX(0);
 }
 
+/* --- list container ------------------------------------------------------- */
+
+#inner-box {
+  margin: 5px;
+  border: none;
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+#outer-box {
+  margin: 5px;
+  border: none;
+  background-color: #1f1f1f;
+}
+
+/* #outer-box, */
+/* #inner-box, */
 #scroll {
-	margin: 5px;
-	border: 2px solid #1f1f1f;
-	background-color: #1f1f1f; /* background color behind the search slider */
+  margin: 5px;
+  border: 2px solid #1f1f1f;
+  background-color: #1f1f1f;
 }
 
-window {
-	margin: 15px;
-	border: 3px solid green; /* border around the entire window */
-	background-color: #1f1f1f;
+/* scrollbar track */
+#scroll {
+  margin: 8px;
+}
+
+/* --- individual entries --------------------------------------------------- */
+#entry {
+  border-radius: 6px;
+  padding: 6px;
+  background: transparent;
+}
+
+/* text & icon within an entry */
+#text {
+  margin: 5px;
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+/* #text, */
+#img {
+  color: @fg0;
+}
+
+/* hovered but not yet selected */
+#entry:hover {
+  background: @accent-hover;
+}
+
+#entry:hover #text {
+  color: @bg0;
+}
+
+/* currently selected entry */
+#entry:selected {
+  background: @accent;
+}
+
+#entry:selected #text {
+  color: @bg0;
+}
+
+/* give a little breathing room around icons/text */
+#img {
+  margin-right: 10px;
+}
+
+/* slight separator between rows (optional) */
+#entry:not(:last-child) {
+  border-bottom: 1px solid @bg2;
 }
