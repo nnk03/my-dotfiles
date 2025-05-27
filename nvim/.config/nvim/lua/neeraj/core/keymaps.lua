@@ -27,7 +27,7 @@ keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" }
 
 -- Add semicolon at the end
 -- keymap.set("n", "<leader>;", "<Esc>A;<Esc>", { desc = "Add semicolon at the end of the current line" })
-vim.keymap.set("n", "<leader>;", function()
+keymap.set("n", "<leader>;", function()
 	local line = vim.api.nvim_get_current_line()
 	if not line:match(";%s*$") then
 		vim.api.nvim_set_current_line(line .. ";")
@@ -35,7 +35,7 @@ vim.keymap.set("n", "<leader>;", function()
 end, { desc = "Add semicolon at end of line (if not present)" })
 
 -- Add comma at the end
-vim.keymap.set("n", "<leader>,", function()
+keymap.set("n", "<leader>,", function()
 	local line = vim.api.nvim_get_current_line()
 	if not line:match(",%s*$") then
 		vim.api.nvim_set_current_line(line .. ",")
@@ -51,37 +51,45 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 -- select all
 keymap.set("n", "<leader>a", "<Esc>ggVG", { desc = "Select all in Visual Block" }) -- select all IN VISUAL BLOCK
 
+-- keymap.set("n", "<leader>a", function()
+-- 	-- in order to bypass the asynchronous scrolling animation due to snacks nvim plugin
+-- 	local bufnr = vim.api.nvim_get_current_buf()
+-- 	local last_line = vim.api.nvim_buf_line_count(bufnr)
+--
+-- 	-- Move to top and start visual selection
+-- 	vim.api.nvim_win_set_cursor(0, { 1, 0 })
+-- 	vim.cmd("normal! V")
+--
+-- 	-- Move to last line (visually selecting everything)
+-- 	vim.api.nvim_win_set_cursor(0, { last_line, 0 })
+-- end, { desc = "Select entire buffer without triggering smooth scroll" })
+
 -- exit all :qa
 keymap.set("n", "<leader>ka", "<cmd>:qa<CR>", { desc = "Quit all" })
 
 -- custom keybindings
-vim.keymap.set("n", "<leader>w", "<Esc>:w<CR>")
-vim.keymap.set("n", "<leader>q", "<Esc>:q<CR>")
-vim.keymap.set("n", "<leader>n", "<Esc>:bn<CR>")
-vim.keymap.set("n", "<leader>m", "<Esc>:bp<CR>")
-vim.keymap.set("n", "<leader>d", "<Esc>:bd<CR>")
+keymap.set("n", "<leader>w", "<Esc>:w<CR>")
+keymap.set("n", "<leader>q", "<Esc>:q<CR>")
+keymap.set("n", "<leader>n", "<Esc>:bn<CR>")
+keymap.set("n", "<leader>m", "<Esc>:bp<CR>")
+keymap.set("n", "<leader>d", "<Esc>:bd<CR>")
 
 -- formatters/linters
 -- for c/cpp
-vim.keymap.set("n", "<leader>bfc", "<Esc>:! clang-format -i % <CR>")
+keymap.set("n", "<leader>bfc", "<Esc>:! clang-format -i % <CR>")
 -- for python
-vim.keymap.set("n", "<leader>bfp", "<Esc>:! black % <CR>")
+keymap.set("n", "<leader>bfp", "<Esc>:! black % <CR>")
 
 -- compiling
 -- make it specific for C++
-vim.keymap.set(
-	"n",
-	"<leader>bcp",
-	"<Esc>:! g++ %; ./a.out <CR>",
-	{ desc = "compile the current file (c++) and execute " }
-)
--- vim.keymap.set(
+keymap.set("n", "<leader>bcp", "<Esc>:! g++ %; ./a.out <CR>", { desc = "compile the current file (c++) and execute " })
+-- keymap.set(
 --   "n",
 --   "<leader>bsml",
 --   "<Esc>:! sml % > output.txt<CR>",
 --   { desc = "Interpret current sml code and write it to output.txt" }
 -- )
-vim.keymap.set(
+keymap.set(
 	"n",
 	"<leader>bml",
 	"<Esc>:! ocamlc %; ./a.out > output.txt<CR>",
@@ -90,13 +98,13 @@ vim.keymap.set(
 
 -- for python code interpreting
 -- make it specific for python
-vim.keymap.set("n", "<leader>bp", "<Esc>:! python3 %; <CR>", { desc = "Interpret current python code" })
+keymap.set("n", "<leader>bp", "<Esc>:! python3 %; <CR>", { desc = "Interpret current python code" })
 
 -- set keymaps for toggle term
--- vim.keymap.set("n", "<C-;>", "<cmd>ToggleTerm size=40 direction=float name=desktop<CR>", { desc = "Toggle term" })
+-- keymap.set("n", "<C-;>", "<cmd>ToggleTerm size=40 direction=float name=desktop<CR>", { desc = "Toggle term" })
 
 -- set keymap to delete current file from buffer without closing windows
-vim.keymap.set(
+keymap.set(
 	"n",
 	"<leader>fd",
 	"<cmd>bp<bar>sp<bar>bn<bar>bd<CR>",
@@ -104,16 +112,16 @@ vim.keymap.set(
 )
 
 -- Oil.nvim
--- vim.keymap.set("n", "<leader>pd", "<Esc>:Oil<CR>", {
+-- keymap.set("n", "<leader>pd", "<Esc>:Oil<CR>", {
 --   desc = "Open parent directory",
 -- })
 
 -- markdown-preview.nvim
--- vim.keymap.set("n", "<leader>pmt", "<Esc>:MarkdownPreviewToggle<CR>", {
+-- keymap.set("n", "<leader>pmt", "<Esc>:MarkdownPreviewToggle<CR>", {
 --   desc = "Toggle Markdown Preview",
 -- })
 
-vim.keymap.set("n", "<leader>jj", function()
+keymap.set("n", "<leader>jj", function()
 	local current_line = vim.fn.line(".")
 	local win_height = vim.api.nvim_win_get_height(0)
 	local offset = math.floor(win_height * 0.75)
@@ -135,7 +143,7 @@ vim.keymap.set("n", "<leader>jj", function()
 	vim.cmd("normal! " .. target_line .. "Gzt")
 end, { desc = "Move cursor 3/4 screen down and align to top" })
 
-vim.keymap.set("n", "<leader>kk", function()
+keymap.set("n", "<leader>kk", function()
 	local current_line = vim.fn.line(".")
 	local win_height = vim.api.nvim_win_get_height(0)
 	local offset = math.floor(win_height * 0.75)
