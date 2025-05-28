@@ -1,5 +1,7 @@
 # Configuration for my Linux Machine
 
+Run `./install_packages.sh` to install all necessary packages
+
 Use GNU Stow (except for powerlevel10k and swaylock and fonts)
 
 `cd` to this dotfiles directory and
