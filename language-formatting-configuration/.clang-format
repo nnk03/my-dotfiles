@@ -1,0 +1,41 @@
+IndentWidth: 3
+
+# The below is heavily borrowed from https://github.com/electronicarts/EASTL/tree/master
+# with a few modifications
+#
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Language                                  : Cpp
+BasedOnStyle                              : Google 
+Standard                                  : Auto
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+AccessModifierOffset                      : -3 # preferable to be negative of IndentWidth
+AlignTrailingComments                     : true
+AllowAllParametersOfDeclarationOnNextLine : false
+AllowShortBlocksOnASingleLine             : true
+AllowShortFunctionsOnASingleLine          : true
+AllowShortIfStatementsOnASingleLine       : false
+AllowShortLoopsOnASingleLine              : false
+AlignAfterOpenBracket                     : Align
+AlignOperands                             : AlignAfterOperator
+BinPackParameters                         : false
+BreakBeforeBraces                         : Allman
+BreakBeforeTernaryOperators               : false
+BreakConstructorInitializersBeforeComma   : true
+ColumnLimit                               : 90
+Cpp11BracedListStyle                      : true
+DerivePointerAlignment                    : true
+DerivePointerBinding                      : false
+# IndentWidth                               : 4
+# IndentWidth                               : 3
+KeepEmptyLinesAtTheStartOfBlocks          : true
+MaxEmptyLinesToKeep                       : 2
+NamespaceIndentation                      : All 
+PointerBindsToType                        : true
+SpacesBeforeTrailingComments              : 1
+SpacesInAngles                            : false
+SpacesInSquareBrackets                    : false
+# TabWidth                                  : 4
+TabWidth                                  : 3
+# UseTab                                    : ForIndentation
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
