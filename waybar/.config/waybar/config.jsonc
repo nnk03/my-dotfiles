@@ -74,7 +74,7 @@
   "clock": {
     "timezone": "Asia/Kolkata",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format": "{:%d-%m-%Y  || %H:%M}",
+    "format": "{:%a %d-%m-%Y  || %H:%M}",
     // "format-alt": "{:%Y-%m-%d}"
   },
 
