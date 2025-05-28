@@ -20,7 +20,8 @@ local lsp_plugins = { import = "neeraj.plugins.lsp" }
 
 require("lazy").setup({ plugins, lsp_plugins }, {
 	install = {
-		colorscheme = { "nightfly" },
+		-- colorscheme = { "nightfly" },
+		colorscheme = { "catppuccin" },
 	},
 	checker = {
 		enabled = true,
