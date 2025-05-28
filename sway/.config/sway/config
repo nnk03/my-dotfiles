@@ -17,12 +17,20 @@
 # Appearance and Theming #
 #========================#
 # Declare Colors:
-set $background #332b2b
+# set $background #332b2b
+# set $color_urgent #fb4934
+# set $text_color #ffffff
+# set $title_bg_unfocused #666666
+# set $title_outline_active #0e844e
+# set $title_outline_unfocused #332b2b
+
+# Catppuccin Mocha inspired color combinations
+set $background #1e1e2e
 set $color_urgent #fb4934
-set $text_color #ffffff
-set $title_bg_unfocused #666666
-set $title_outline_active #0e844e
-set $title_outline_unfocused #332b2b
+set $text_color #cdd664
+set $title_bg_unfocused #313244
+set $title_outline_active #89b4fa
+set $title_outline_unfocused #585b70
 
 # Set Colors:           Border                   Background          Text          Indicator             Child Border
 client.background       $background
