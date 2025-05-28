@@ -1,6 +1,6 @@
 # Configuration for my Linux Machine
 
-Use GNU Stow (except for powerlevel10k and swaylock)
+Use GNU Stow (except for powerlevel10k and swaylock and fonts)
 
 `cd` to this dotfiles directory and
 
