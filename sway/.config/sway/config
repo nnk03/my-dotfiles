@@ -279,7 +279,8 @@ bindsym ctrl+$mod+f exec GTK_THEME=Adwaita-dark GDK_BACKEND=x11 nautilus
 bindsym ctrl+$mod+b exec blueman-manager
 
 # Open a terminal emulator:
-set $term alacritty
+# set $term alacritty
+set $term kitty
 bindsym $mod+t exec $term
 bindsym $mod+Return exec $term
 
