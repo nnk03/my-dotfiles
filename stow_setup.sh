@@ -12,3 +12,7 @@ stow vim
 stow waybar
 stow wofi
 stow yazi
+stow zsh
+
+echo "source ~/.config/zsh/.aliases.zsh" >>"~/.zshrc"
+echo "source ~/.config/zsh/.options.zsh" >>"~/.zshrc"
