@@ -24,3 +24,5 @@ alias cpack='/home/neeraj/.cmake-4.0.0/bin/cpack'
 
 # interactive neovim search
 alias inv='nvim $(fzf -m --preview="bat --color=always {}")'
+alias lg='lazygit'
+alias lo='lazydocker'
