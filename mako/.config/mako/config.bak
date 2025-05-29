@@ -1,0 +1,15 @@
+width=500
+height=500
+background-color=#282A36
+text-color=#F8F8F2
+font=monospace 12
+default-timeout=10000
+
+[urgency=low]
+background-color=#44475a
+
+[urgency=normal]
+background-color=#6272a4
+
+[urgency=high]
+background-color=#ff5555
