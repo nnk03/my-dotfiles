@@ -13,6 +13,7 @@ Use GNU Stow (except for powerlevel10k and swaylock and fonts)
 stow nvim # for nvim configuration
 stow tmux # for tmux configuration
 stow alacritty # for alacritty configuration
+stow zsh # for zsh configuration
 ```
 
 For tmux run the below
