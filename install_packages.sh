@@ -1,1 +1,0 @@
-/home/neeraj/my-linux/ubuntu/install_packages.sh
