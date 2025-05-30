@@ -16,7 +16,7 @@ export EDITOR='vim'
 export VISUAL='vim'
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-. "$HOME/.cargo/env"
+# . "$HOME/.cargo/env"
 
 
 # for screensharing
@@ -55,7 +55,7 @@ export PATH=$PATH:/usr/local/go/bin
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
-source $HOME/.venv/bin/activate
+# source $HOME/.venv/bin/activate
 
 # for networkx directory alone 
 if [[ $(pwd) == "$HOME/btp/networkx"* ]]; then
