@@ -9,3 +9,5 @@
 	editor = "/home/neeraj/.nvim-linux-x86_64/bin/nvim"
 [diff]
 	tool = nvimdiff
+[merge]
+   ff = no
