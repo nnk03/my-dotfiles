@@ -121,45 +121,46 @@ keymap.set(
 --   desc = "Toggle Markdown Preview",
 -- })
 
-keymap.set("n", "<leader>jj", function()
-	local current_line = vim.fn.line(".")
-	local win_height = vim.api.nvim_win_get_height(0)
-	local offset = math.floor(win_height * 0.75)
-	local target_line = current_line + offset
-	local last_line = vim.fn.line("$")
-
-	-- Clamp target_line to the last line of the file
-	if target_line > last_line then
-		local diff = last_line - current_line
-		offset = math.floor(diff * 0.75)
-		target_line = current_line + offset
-
-		if target_line > last_line then
-			target_line = last_line
-		end
-	end
-
-	-- Move to the target line and align it to the top of the screen
-	vim.cmd("normal! " .. target_line .. "Gzt")
-end, { desc = "Move cursor 3/4 screen down and align to top" })
-
-keymap.set("n", "<leader>kk", function()
-	local current_line = vim.fn.line(".")
-	local win_height = vim.api.nvim_win_get_height(0)
-	local offset = math.floor(win_height * 0.75)
-	local target_line = current_line - offset
-
-	-- Clamp target_line to the first line of the file
-	if target_line < 1 then
-		local diff = current_line - 1
-		offset = math.floor(diff * 0.75)
-		target_line = current_line - offset
-
-		if target_line < 1 then
-			target_line = 1
-		end
-	end
-
-	-- Move to the target line and align it to the top
-	vim.cmd("normal! " .. target_line .. "Gzt")
-end, { desc = "Move cursor 3/4 screen up and align to top" })
+-- The below functions can be achieved by using Shift+M or zz
+-- keymap.set("n", "<leader>jj", function()
+-- 	local current_line = vim.fn.line(".")
+-- 	local win_height = vim.api.nvim_win_get_height(0)
+-- 	local offset = math.floor(win_height * 0.75)
+-- 	local target_line = current_line + offset
+-- 	local last_line = vim.fn.line("$")
+--
+-- 	-- Clamp target_line to the last line of the file
+-- 	if target_line > last_line then
+-- 		local diff = last_line - current_line
+-- 		offset = math.floor(diff * 0.75)
+-- 		target_line = current_line + offset
+--
+-- 		if target_line > last_line then
+-- 			target_line = last_line
+-- 		end
+-- 	end
+--
+-- 	-- Move to the target line and align it to the top of the screen
+-- 	vim.cmd("normal! " .. target_line .. "Gzt")
+-- end, { desc = "Move cursor 3/4 screen down and align to top" })
+--
+-- keymap.set("n", "<leader>kk", function()
+-- 	local current_line = vim.fn.line(".")
+-- 	local win_height = vim.api.nvim_win_get_height(0)
+-- 	local offset = math.floor(win_height * 0.75)
+-- 	local target_line = current_line - offset
+--
+-- 	-- Clamp target_line to the first line of the file
+-- 	if target_line < 1 then
+-- 		local diff = current_line - 1
+-- 		offset = math.floor(diff * 0.75)
+-- 		target_line = current_line - offset
+--
+-- 		if target_line < 1 then
+-- 			target_line = 1
+-- 		end
+-- 	end
+--
+-- 	-- Move to the target line and align it to the top
+-- 	vim.cmd("normal! " .. target_line .. "Gzt")
+-- end, { desc = "Move cursor 3/4 screen up and align to top" })
