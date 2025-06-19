@@ -6,7 +6,9 @@ return {
 	priority = 1000,
 	config = function()
 		-- catppuccin
-		require("catppuccin").setup()
+		require("catppuccin").setup({
+			transparent_background = true, -- ← enable transparency
+		})
 		vim.cmd([[ colorscheme catppuccin ]])
 	end,
 }
