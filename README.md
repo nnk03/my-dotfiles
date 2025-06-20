@@ -62,3 +62,7 @@ some changes were done in ~/.p10k.zsh
   typeset -g POWERLEVEL9K_DIR_ANCHOR_BOLD=true
 
 ```
+
+For gnome-like-sway, checkout my-linux repo for the readme
+
+Install `tldr` package using apt
