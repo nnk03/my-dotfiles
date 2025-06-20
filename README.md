@@ -7,6 +7,13 @@ Run `./install_packages.sh` to install all necessary packages
 
 Use GNU Stow (except for powerlevel10k and swaylock and fonts)
 
+For tmux, first clone tmux plugin manager
+
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+```
+
 `cd` to this dotfiles directory and
 
 ```sh
