@@ -37,7 +37,7 @@ version=33
 font-size=uint32 26
 matching=uint32 1
 max-width-percentage=uint32 50
-show-switcher=['<Control><Super>space']
+show-switcher=['<Super>space']
 
 [tactile]
 col-0=2
