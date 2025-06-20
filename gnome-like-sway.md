@@ -46,3 +46,25 @@ gsettings get org.gnome.mutter overlay-key
 If it's '', then it's disabled.
 
 If it's 'Super_L', then it's active.
+
+# For Keyboard shortcuts
+
+```bash
+dconf dump /org/gnome/desktop/wm/keybindings/ > keybindings.txt
+
+```
+
+# For the whole Gnome-setup
+
+To dump it, run
+
+```bash
+dconf dump /org/gnome/ > current_gnome.txt
+
+```
+
+To load it, run
+
+```bash
+dconf load /org/gnome/ < current_gnome.txt
+```
