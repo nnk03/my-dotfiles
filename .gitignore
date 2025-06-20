@@ -1,0 +1,4 @@
+tmux/.tmux/plugins/tmux-continuum/
+tmux/.tmux/plugins/tmux-resurrect/
+tmux/.tmux/plugins/tmux-sessionist/
+tmux/.tmux/plugins/tmux-themepack/
