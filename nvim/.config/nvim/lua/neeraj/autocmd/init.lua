@@ -46,6 +46,12 @@ vim.api.nvim_create_autocmd("BufWritePost", {
 	command = "silent ! clang-format -i %",
 })
 
+-- to apply gofmt formatting when saving go files
+vim.api.nvim_create_autocmd("BufWritePost", {
+	pattern = { "*.go" },
+	command = "silent ! gofmt -w %",
+})
+
 -- black formatting is already done by none-ls
 -- -- to apply black formatting when saving python files
 -- vim.api.nvim_create_autocmd("BufWritePost", {

@@ -44,6 +44,10 @@ return {
 				formatting.black,
 				formatting.isort,
 
+				-- go formatter
+				-- need to check it
+				-- formatting.djlint,
+
 				require("none-ls.diagnostics.eslint"), -- requires none-ls-extras.nvim plugin
 
 				-- diagnostics.eslint_d.with({ -- js/ts linter
