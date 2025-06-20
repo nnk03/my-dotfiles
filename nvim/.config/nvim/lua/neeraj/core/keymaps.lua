@@ -10,7 +10,10 @@ local keymap = vim.keymap -- for conciseness
 -- keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
 -- clear search highlights
-keymap.set("n", "<leader>nh", "nohl<CR>", { desc = "Clear search highlights" })
+keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
+
+-- don't replace the paste register after pasting
+keymap.set("v", "<leader>p", '"_dP', { desc = "Paste without replacing register" })
 
 -- delete single character without copying into register
 -- keymap.set("n", "x", '"_x')
