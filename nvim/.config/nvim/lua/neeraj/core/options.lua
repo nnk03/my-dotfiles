@@ -3,6 +3,8 @@ local opt = vim.opt -- for conciseness
 -- line numbers
 opt.relativenumber = true -- show relative line numbers
 opt.number = true -- shows absolute line number on cursor line (when relative number is on)
+-- to set colorcolumn to indicate if a line exceeds 80 characters
+vim.cmd("set colorcolumn=80")
 -- vim.cmd("set rnu")
 -- vim.cmd("set nu")
 
