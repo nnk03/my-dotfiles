@@ -119,7 +119,7 @@ last-folder-path='/home/neeraj/Pictures'
 night-light-enabled=false
 
 [settings-daemon/plugins/media-keys]
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/']
 home=['<Control><Super>f']
 terminal=['<Control><Alt>t']
 www=['<Shift><Super>b']
@@ -158,6 +158,11 @@ name='Go To Workspace 8'
 binding='<Super>9'
 command='wmctrl -s 8'
 name='Go To Workspace 9'
+
+[settings-daemon/plugins/media-keys/custom-keybindings/custom7]
+binding='<Shift><Super>p'
+command='google-chrome-stable --incognito --new-window'
+name='Google Chrome Incognito'
 
 [shell]
 disabled-extensions=['ubuntu-dock@ubuntu.com']
