@@ -66,3 +66,7 @@ some changes were done in ~/.p10k.zsh
 For gnome-like-sway, checkout my-linux repo for the readme
 
 Install `tldr` package using apt
+
+# For installing NVM - Node Version Manager
+
+[Github Repo](https://github.com/nvm-sh/nvm)
