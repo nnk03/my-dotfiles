@@ -37,5 +37,11 @@ return {
 		keymap.set("n", "<leader>h2", '<cmd>lua require("harpoon.ui").nav_file(2)<CR>', {
 			desc = "Go to harpoon file number 2",
 		})
+		keymap.set("n", "<leader>h3", '<cmd>lua require("harpoon.ui").nav_file(3)<CR>', {
+			desc = "Go to harpoon file number 3",
+		})
+		keymap.set("n", "<leader>h4", '<cmd>lua require("harpoon.ui").nav_file(4)<CR>', {
+			desc = "Go to harpoon file number 4",
+		})
 	end,
 }
