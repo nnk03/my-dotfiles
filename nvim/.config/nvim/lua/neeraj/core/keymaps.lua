@@ -114,6 +114,14 @@ keymap.set(
 	{ desc = "Remove current file from buffer without closing window " }
 )
 
+keymap.set("i", "<C-j>", "<Esc>o", {
+	desc = "Jump to next line",
+})
+
+keymap.set("i", "<C-k>", "<Esc>O", {
+	desc = "Jump to previous line",
+})
+
 -- Oil.nvim
 -- keymap.set("n", "<leader>pd", "<Esc>:Oil<CR>", {
 --   desc = "Open parent directory",
