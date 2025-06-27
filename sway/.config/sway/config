@@ -276,10 +276,11 @@ set $menu wofi --show drun  -i | xargs swaymsg exec --
 # bindsym $mod+shift+b exec google-chrome
 # to ask for profile each time new window opens
 # bindsym $mod+shift+b exec GTK_THEME=Adwaita-dark firefox -P %u
-bindsym $mod+shift+b exec GTK_THEME=Adwaita-dark google-chrome --new-window
+# bindsym $mod+shift+b exec GTK_THEME=Adwaita-dark google-chrome --new-window
 bindsym $mod+shift+p exec GTK_THEME=Adwaita-dark google-chrome --new-window --incognito
 # now chrome autofilling working, may be because of GTK_THEME=Adwaita-dark ??
 # bindsym $mod+shift+b exec firefox-developer-edition -P %u
+bindsym $mod+shift+b exec firefox -P %u
 
 # Open a file manager:
 # bindsym ctrl+$mod+f exec pcmanfm
