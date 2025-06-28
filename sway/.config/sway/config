@@ -291,8 +291,8 @@ bindsym ctrl+$mod+b exec blueman-manager
 set $browser "browser"
 bindsym $mod+shift+g      mode $browser
 mode $browser {
-    bindsym p         exec GTK_THEME=Adwaita-dark google-chrome --new-window
-    bindsym n         exec GTK_THEME=Adwaita-dark google-chrome --new-window --incognito
+    bindsym n         exec GTK_THEME=Adwaita-dark google-chrome --new-window; mode "default"
+    bindsym p         exec GTK_THEME=Adwaita-dark google-chrome --new-window --incognito; mode "default"
     bindsym return    mode "default"
     bindsym escape    mode "default"
 }
