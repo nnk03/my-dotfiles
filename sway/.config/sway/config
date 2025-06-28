@@ -99,17 +99,17 @@ bindsym $mod+ctrl+Right focus right
 
 
 # Move focus to another window ("cult of vim" version):
-bindsym $mod+ctrl+h focus left
-bindsym $mod+ctrl+j focus down
-bindsym $mod+ctrl+k focus up
-bindsym $mod+ctrl+l focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 # Move focus to another window gamer version for left hand movement, while
 # dragging files 
-bindsym $mod+ctrl+a focus left
-bindsym $mod+ctrl+s focus down
-bindsym $mod+ctrl+d focus right
-bindsym $mod+ctrl+w focus up
+bindsym $mod+a focus left
+bindsym $mod+s focus down
+bindsym $mod+d focus right
+bindsym $mod+w focus up
 
 # Move the window:
 bindsym $mod+Shift+Left move left
@@ -200,9 +200,9 @@ bindsym $mod+b splitv
 bindsym $mod+v splith
 
 # Switch the current container between different layout styles
-bindsym $mod+s layout stacking
+bindsym $mod+ctrl+s layout stacking
 # bindsym $mod+w layout tabbed
-bindsym $mod+t layout tabbed
+bindsym $mod+ctrl+t layout tabbed
 bindsym $mod+e layout toggle split
 
 # Make the current focus fullscreen
@@ -215,7 +215,7 @@ bindsym $mod+Shift+f floating toggle
 bindsym $mod+tab focus mode_toggle
 
 # Move focus to the parent container
-bindsym $mod+a focus parent
+# bindsym $mod+a focus parent
 
 
 #=================================#
