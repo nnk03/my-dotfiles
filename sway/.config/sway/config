@@ -92,17 +92,24 @@ bindsym Ctrl+Alt+r exec reboot
 # Keyboard Shortcuts (Window Management) #
 #========================================#
 # Move focus to another window:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+bindsym $mod+ctrl+Left focus left
+bindsym $mod+ctrl+Down focus down
+bindsym $mod+ctrl+Up focus up
+bindsym $mod+ctrl+Right focus right
 
 
 # Move focus to another window ("cult of vim" version):
-bindsym $mod+j focus down
-bindsym $mod+h focus left
-bindsym $mod+l focus right
-bindsym $mod+k focus up
+bindsym $mod+ctrl+h focus left
+bindsym $mod+ctrl+j focus down
+bindsym $mod+ctrl+k focus up
+bindsym $mod+ctrl+l focus right
+
+# Move focus to another window gamer version for left hand movement, while
+# dragging files 
+bindsym $mod+ctrl+a focus left
+bindsym $mod+ctrl+s focus down
+bindsym $mod+ctrl+d focus right
+bindsym $mod+ctrl+w focus up
 
 # Move the window:
 bindsym $mod+Shift+Left move left
@@ -311,7 +318,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+space exec $menu
 
 # Open the application launcher (alternate version):
-bindsym $mod+d exec $menu
+# bindsym $mod+d exec $menu
 
 exec swayidle -w \
 	before-sleep 'swaylock -i $HOME/.config/sway/BlackWallpaper.jpg --debug'
