@@ -292,7 +292,7 @@ set $browser "browser"
 bindsym $mod+shift+g      mode $browser
 mode $browser {
     bindsym p         exec GTK_THEME=Adwaita-dark google-chrome --new-window
-    bindsym r         exec GTK_THEME=Adwaita-dark google-chrome --new-window --incognito
+    bindsym n         exec GTK_THEME=Adwaita-dark google-chrome --new-window --incognito
     bindsym return    mode "default"
     bindsym escape    mode "default"
 }
