@@ -26,3 +26,7 @@ alias cpack='/home/neeraj/.cmake-4.0.0/bin/cpack'
 alias inv='nvim $(fzf -m --preview="bat --color=always {}")'
 alias lg='lazygit'
 alias lo='lazydocker'
+
+# -b is for old style of display
+# -M is for "week starts on Monday"
+alias ncal='ncal -b -M'
