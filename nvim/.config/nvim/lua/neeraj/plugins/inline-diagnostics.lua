@@ -13,7 +13,6 @@ return {
 			end
 			local result = table.concat(messages, "\n")
 			vim.fn.setreg("+", result)
-			print("Copied diagnostics to clipboard!")
 		end, { desc = "Copy diagnostics on current line" })
 
 		-- :lua print(vim.inspect(vim.diagnostic.get(0, {lnum = vim.fn.line('.') - 1})))
