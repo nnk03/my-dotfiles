@@ -170,20 +170,20 @@ return {
 		-- })
 
 		-- Uncomment to enable Svelte
-		-- vim.lsp.config("svelte", {
-		--   capabilities = capabilities,
-		--   on_attach = function(client, bufnr)
-		--     on_attach(client, bufnr)
-		--     vim.api.nvim_create_autocmd("BufWritePost", {
-		--       pattern = { "*.js", "*.ts" },
-		--       callback = function(ctx)
-		--         if client.name == "svelte" then
-		--           client.notify("$/onDidChangeTsOrJsFile", { uri = ctx.file })
-		--         end
-		--       end,
-		--     })
-		--   end,
-		-- })
+		vim.lsp.config("svelte", {
+			capabilities = capabilities,
+			on_attach = function(client, bufnr)
+				on_attach(client, bufnr)
+				vim.api.nvim_create_autocmd("BufWritePost", {
+					pattern = { "*.js", "*.ts" },
+					callback = function(ctx)
+						if client.name == "svelte" then
+							client.notify("$/onDidChangeTsOrJsFile", { uri = ctx.file })
+						end
+					end,
+				})
+			end,
+		})
 
 		vim.lsp.config("prismals", {
 			capabilities = capabilities,
@@ -312,11 +312,11 @@ return {
 		-- })
 		--
 		-- -- configure emmet language server
-		-- lspconfig.emmet_ls.setup({
-		-- 	capabilities = capabilities,
-		-- 	on_attach = on_attach,
-		-- 	filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
-		-- })
+		lspconfig.emmet_ls.setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+			filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
+		})
 		--
 		-- -- configure python server
 		-- lspconfig.pyright.setup({
