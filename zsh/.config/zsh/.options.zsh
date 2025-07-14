@@ -81,4 +81,4 @@ function y() {
 	rm -f -- "$tmp"
 }
 
-
+setopt HIST_IGNORE_SPACE
