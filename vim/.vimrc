@@ -53,6 +53,7 @@ if has('clipboard')
 endif
 
 
+  set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf
 
 " set cursorline "highlight current line
 
