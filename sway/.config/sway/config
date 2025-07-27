@@ -52,7 +52,8 @@ default_border pixel 5
 # Set the Wallpaper:
 # output * bg $HOME/.config/sway/ubuntu_wallpaper.png fill
 # output * bg $HOME/.config/sway/tree_wallpaper.jpg fill
-output * bg $HOME/.config/sway/gaming_biker.jpg fill
+# output * bg $HOME/.config/sway/gaming_biker.jpg fill
+output * bg $HOME/.config/sway/gaming_biker_2.jpg fill
 
 
 #====================================#
