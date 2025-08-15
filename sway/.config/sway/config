@@ -193,6 +193,24 @@ bindsym $mod+Shift+9 move container to workspace $ws9
 # Move workspace between different monitors
 bindsym $mod+Shift+tab exec ~/.config/sway/scripts/cycle_workspace_output.sh
 
+# # === External monitor graininess fix ===
+#
+# # Match refresh rates (both at 60Hz)
+# output eDP-1 mode 1920x1080@60Hz
+# output HDMI-A-5 mode 1920x1080@60Hz
+#
+# # Use better scaling filter (avoids harsh nearest-neighbor effect)
+# output eDP-1 scale_filter smart
+# output HDMI-A-5 scale_filter smart
+#
+# # Explicitly set scaling (keep both at 1.0 for sharpness)
+# output eDP-1 scale 1.0
+# output HDMI-A-5 scale 1.0
+#
+# # Optional: disable adaptive sync explicitly
+# output eDP-1 adaptive_sync off
+# output HDMI-A-5 adaptive_sync off
+
 #=============================#
 # Keyboard Shortcuts (Layout) #
 #=============================#
