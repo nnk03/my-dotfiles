@@ -1,0 +1,142 @@
+/*
+* Modified from prev-styles.css*/
+
+* {
+  /* font-family: Roboto, Helvetica, Arial, sans-serif; */
+  font-family: "Meslo LGS Nerd Font Mono", monospace;
+  font-size: 16px;
+  min-height: 0;
+
+  padding-top: 2px;
+  padding-bottom: 2px;
+
+  border-radius: 10px;
+  border-color: #313244;
+
+  color: #cdd6f4; /* base text */
+  background-color: #1e1e2e; /* bar background */
+}
+
+/* ─── Battery ─────────────────────────────────── */
+#battery {
+  background: transparent;
+  color: #f9e2af; /* soft yellow */
+  opacity: 0.8;
+  padding: 2px 8px;
+}
+
+#battery.charging,
+#battery.plugged {
+  color: #f9e2af;
+  padding: 2px 8px;
+}
+
+#battery.critical:not(.charging) {
+  animation: blink 0.5s linear infinite alternate;
+  background-color: #f53c3c;
+  color: #cdd6f4;
+}
+
+/* ─── Clock ───────────────────────────────────── */
+#clock {
+  background: #313244;
+  color: #cdd6f4;
+  margin-right: 4px;
+  padding: 2px 8px;
+}
+
+/* ─── System resources ────────────────────────── */
+#cpu,
+#memory,
+#temperature,
+#backlight {
+  background: transparent;
+  color: #cdd6f4;
+  opacity: 0.8;
+  padding: 2px 8px;
+}
+
+/* ─── Network ─────────────────────────────────── */
+#network {
+  background: transparent;
+  color: #cdd6f4;
+  opacity: 0.8;
+  padding: 2px 8px;
+}
+
+#network.disconnected {
+  background: #313244;
+  color: #f53c3c;
+}
+
+/* ─── Tray ────────────────────────────────────── */
+#tray {
+  background: #313244;
+  color: #cdd6f4;
+  margin-left: 18px;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+  background: #313244;
+  color: #cdd6f4;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background: #313244;
+  color: #cdd6f4;
+}
+
+/* ─── Bar window ─────────────────────────────── */
+window#waybar {
+  background: transparent;
+  border-bottom: 1px solid #313244;
+  transition: background-color 0.2s;
+}
+
+/* ─── Workspaces ─────────────────────────────── */
+#workspaces button {
+  background: #313244;
+  color: #cdd6f4;
+  margin: 0 2px;
+  opacity: 0.9;
+  border: 1px solid #45475a;
+}
+
+#workspaces button:hover {
+  background: #74c7ec; /* hover blue */
+  border-color: #74c7ec;
+  color: #1e1e2e;
+}
+
+#workspaces button.focused {
+  background: #89b4fa; /* active workspace */
+  color: #1e1e2e;
+  font-weight: bold;
+  opacity: 1;
+}
+
+#workspaces button.urgent {
+  background-color: #f53c3c;
+  color: #1e1e2e;
+}
+
+/* ─── Custom modules ─────────────────────────── */
+#custom-audio,
+#custom-hostname {
+  background: transparent;
+  color: #cdd6f4;
+  opacity: 0.8;
+  padding: 2px 8px;
+}
+
+/* ─── Animation keyframes ────────────────────── */
+@keyframes blink {
+  from {
+    background-color: #f53c3c;
+  }
+  to {
+    background-color: #1e1e2e;
+  }
+}

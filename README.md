@@ -1,3 +1,44 @@
+# Multimonitor with lenovo-loq 
+because of nvidia-graphics
+
+edit `GRUB_CMDLINE_LINUX_DEFAULT` to the below in `/etc/default/grub`
+```
+
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nvidia-drm.modeset=1"
+
+```
+
+Then
+```sh
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+```sh
+sudo pacman -S mesa vulkan-intel intel-media-driver
+sudo nano /etc/pacman.conf
+```
+
+Uncomment the lines for [multilib]:
+```
+[multilib]
+Include = /etc/pacman.d/mirrorlist
+
+```
+
+```sh
+sudo pacman -Syu
+sudo pacman -S nvidia-dkms nvidia-utils lib32-nvidia-utils egl-wayland
+```
+
+```sh
+sudo pacman -S intel-ucode
+sudo pacman -S nvidia nvidia-utils
+sudo pacman -S nvidia-lts # if linux-ltx is installed
+
+```
+
+
+
 # Configuration for my Linux Machine
 
 First use `my-linux` repo to run the `setup.sh` script and then

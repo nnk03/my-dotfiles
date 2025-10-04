@@ -1,142 +1,127 @@
-/*
-* Modified from prev-styles.css*/
+@import "mocha.css"; 
 
 * {
-  /* font-family: Roboto, Helvetica, Arial, sans-serif; */
-  font-family: "Meslo LGS Nerd Font Mono", monospace;
-  font-size: 16px;
-  min-height: 0;
-
-  padding-top: 2px;
-  padding-bottom: 2px;
-
-  border-radius: 10px;
-  border-color: #313244;
-
-  color: #cdd6f4; /* base text */
-  background-color: #1e1e2e; /* bar background */
+    font-family: "MesloLGS Nerd Font Mono Bold";
+    font-size: 20px;
+    min-height: 0;
+    font-weight: bold;
 }
 
-/* ─── Battery ─────────────────────────────────── */
-#battery {
-  background: transparent;
-  color: #f9e2af; /* soft yellow */
-  opacity: 0.8;
-  padding: 2px 8px;
-}
-
-#battery.charging,
-#battery.plugged {
-  color: #f9e2af;
-  padding: 2px 8px;
-}
-
-#battery.critical:not(.charging) {
-  animation: blink 0.5s linear infinite alternate;
-  background-color: #f53c3c;
-  color: #cdd6f4;
-}
-
-/* ─── Clock ───────────────────────────────────── */
-#clock {
-  background: #313244;
-  color: #cdd6f4;
-  margin-right: 4px;
-  padding: 2px 8px;
-}
-
-/* ─── System resources ────────────────────────── */
-#cpu,
-#memory,
-#temperature,
-#backlight {
-  background: transparent;
-  color: #cdd6f4;
-  opacity: 0.8;
-  padding: 2px 8px;
-}
-
-/* ─── Network ─────────────────────────────────── */
-#network {
-  background: transparent;
-  color: #cdd6f4;
-  opacity: 0.8;
-  padding: 2px 8px;
-}
-
-#network.disconnected {
-  background: #313244;
-  color: #f53c3c;
-}
-
-/* ─── Tray ────────────────────────────────────── */
-#tray {
-  background: #313244;
-  color: #cdd6f4;
-  margin-left: 18px;
-}
-
-#tray > .passive {
-  -gtk-icon-effect: dim;
-  background: #313244;
-  color: #cdd6f4;
-}
-
-#tray > .needs-attention {
-  -gtk-icon-effect: highlight;
-  background: #313244;
-  color: #cdd6f4;
-}
-
-/* ─── Bar window ─────────────────────────────── */
 window#waybar {
-  background: transparent;
-  border-bottom: 1px solid #313244;
-  transition: background-color 0.2s;
+    background: transparent;
+    background-color: @crust;
+    color: @overlay0;
+    transition-property: background-color;
+    transition-duration: 0.1s;
+    border-bottom: 1px solid @overlay1;
 }
 
-/* ─── Workspaces ─────────────────────────────── */
+#window {
+    margin: 8px;
+    padding-left: 8;
+    padding-right: 8;
+}
+
+button {
+    box-shadow: inset 0 -3px transparent;
+    border: none;
+    border-radius: 0;
+}
+
+button:hover {
+    background: inherit;
+    color: @mauve;
+    border-top: 2px solid @mauve;
+}
+
 #workspaces button {
-  background: #313244;
-  color: #cdd6f4;
-  margin: 0 2px;
-  opacity: 0.9;
-  border: 1px solid #45475a;
-}
-
-#workspaces button:hover {
-  background: #74c7ec; /* hover blue */
-  border-color: #74c7ec;
-  color: #1e1e2e;
+    padding: 0 4px;
 }
 
 #workspaces button.focused {
-  background: #89b4fa; /* active workspace */
-  color: #1e1e2e;
-  font-weight: bold;
-  opacity: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: @rosewater;
+    border-top: 2px solid @rosewater;
+}
+
+#workspaces button.active {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: @mauve;
+    border-top: 2px solid @mauve;
 }
 
 #workspaces button.urgent {
-  background-color: #f53c3c;
-  color: #1e1e2e;
+    background-color: #eb4d4b;
 }
 
-/* ─── Custom modules ─────────────────────────── */
-#custom-audio,
-#custom-hostname {
-  background: transparent;
-  color: #cdd6f4;
-  opacity: 0.8;
-  padding: 2px 8px;
+#pulseaudio,
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#wireplumber,
+#tray,
+#network,
+#mode,
+#scratchpad {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
-/* ─── Animation keyframes ────────────────────── */
-@keyframes blink {
-  from {
-    background-color: #f53c3c;
-  }
-  to {
-    background-color: #1e1e2e;
-  }
+#clock {
+    color: @maroon;
+    border-bottom: 2px solid @maroon;
+}
+
+#clock.date {
+    color: @mauve;
+    border-bottom: 2px solid @mauve;
+}
+
+#pulseaudio {
+    color: @blue;
+    border-bottom: 2px solid @blue;
+}
+
+#network {
+    color: @yellow;
+    border-bottom: 2px solid @yellow;
+}
+
+#idle_inhibitor {
+    margin-right: 12px;
+    color: #7cb342;
+}
+
+#idle_inhibitor.activated {
+    color: @red;
+}
+
+#battery {
+    color: @green;
+    border-bottom: 2px solid @green;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left>widget:first-child>#workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right>widget:last-child>#workspaces {
+    margin-right: 0;
+}
+
+#custom-vpn {
+    color: @lavender;
+    border-radius: 15px;
+    padding-left: 6px;
+    padding-right: 6px;
 }
