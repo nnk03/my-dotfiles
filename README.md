@@ -1,7 +1,29 @@
-# Multimonitor with lenovo-loq 
+# for lsp error
+
+```
+LSP] Format request failed, no matching language servers.
+              [LSP] Format request failed, no matching language servers.
+                      [null-ls] failed to run generator: ....local/share/nvim/lazy/none-ls.nvim/lua/null-ls/loop.lua:165: command prettier is not executable (make sure it's installed and on your $PATH)
+
+```
+
+```sh
+npm install -g prettier
+
+```
+
+# for hyprland in arch
+
+[https://youtu.be/2CP_9-jCV6A?si=OOMukqO3WglVdpYd](https://youtu.be/2CP_9-jCV6A?si=OOMukqO3WglVdpYd)
+[https://youtu.be/KA1jv40q9lQ?si=abGV9ojKdYda5cxz](https://youtu.be/KA1jv40q9lQ?si=abGV9ojKdYda5cxz)
+[https://youtu.be/omhJMH9lPPc?si=gFUZV_qSo11wY1nW](https://youtu.be/omhJMH9lPPc?si=gFUZV_qSo11wY1nW)
+
+# Multimonitor with lenovo-loq
+
 because of nvidia-graphics
 
 edit `GRUB_CMDLINE_LINUX_DEFAULT` to the below in `/etc/default/grub`
+
 ```
 
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nvidia-drm.modeset=1"
@@ -9,6 +31,7 @@ GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nvidia-drm.modeset=1"
 ```
 
 Then
+
 ```sh
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
@@ -19,6 +42,7 @@ sudo nano /etc/pacman.conf
 ```
 
 Uncomment the lines for [multilib]:
+
 ```
 [multilib]
 Include = /etc/pacman.d/mirrorlist
@@ -36,8 +60,6 @@ sudo pacman -S nvidia nvidia-utils
 sudo pacman -S nvidia-lts # if linux-ltx is installed
 
 ```
-
-
 
 # Configuration for my Linux Machine
 
