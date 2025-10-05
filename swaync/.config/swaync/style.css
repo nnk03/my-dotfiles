@@ -297,3 +297,62 @@
 .widget-mpris-subtitle {
   font-size: 1.1rem;
 }
+
+/* ──────────────────────────────── */
+/* Urgency-based Notification Styles */
+/* ──────────────────────────────── */
+
+/* Low urgency — subtle, slightly dimmed */
+.low .notification {
+  background: rgba(68, 71, 90, 0.6); /* @current-line, semi-transparent */
+  border: 2px solid rgba(98, 114, 164, 0.8); /* @comment */
+  box-shadow: none;
+  opacity: 0.9;
+}
+
+/* Normal urgency — default look */
+.normal .notification {
+  background: @current-line;
+  border: 2px solid @accent;
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+/* Critical urgency — vivid and persistent */
+.critical .notification {
+  background: rgba(255, 85, 85, 0.15); /* subtle red tint */
+  border: 2px solid #ff5555; /* Dracula red */
+  box-shadow: 0 0 8px 2px rgba(255, 85, 85, 0.3);
+  opacity: 1;
+}
+
+.critical .summary,
+.critical .body {
+  color: #ffb86c; /* warm orange text for contrast */
+  font-weight: bold;
+}
+
+/* Optional: make the close button more visible for critical ones */
+.critical .close-button {
+  background: #ff5555;
+  color: #f8f8f2;
+}
+
+.critical .close-button:hover {
+  background: #ff6e6e;
+}
+
+/* You can even pulse critical notifications slightly */
+@keyframes pulseCritical {
+  0%,
+  100% {
+    box-shadow: 0 0 6px 2px rgba(255, 85, 85, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 10px 4px rgba(255, 85, 85, 0.5);
+  }
+}
+
+.critical .notification {
+  animation: pulseCritical 2s infinite;
+}
