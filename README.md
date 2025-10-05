@@ -1,3 +1,5 @@
+# To open all chrome tabs from another OS
+`chrome://history/syncedTabs` and click `Open ALL`
 # Arch install script + dual boot video link
 
 [https://youtu.be/mWl4P6DOt9M?si=U_XNuPlwfXEiJDI0](https://youtu.be/mWl4P6DOt9M?si=U_XNuPlwfXEiJDI0)

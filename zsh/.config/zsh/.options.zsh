@@ -82,3 +82,5 @@ function y() {
 }
 
 setopt HIST_IGNORE_SPACE
+
+source /usr/share/nvm/init-nvm.sh
