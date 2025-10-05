@@ -79,6 +79,7 @@ hyprland-relative-workspace-bin
 hyprlock
 hyprpaper
 hyprshot
+inetutils
 intel-media-driver
 intel-ucode
 iwd
