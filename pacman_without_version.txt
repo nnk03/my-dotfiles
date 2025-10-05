@@ -20,6 +20,7 @@ dust
 efibootmgr
 epiphany
 exfatprogs
+eza
 fastfetch
 firefox
 foot
@@ -97,6 +98,7 @@ linux-headers
 linux-lts
 loupe
 malcontent
+man-db
 mtools
 nano
 nautilus
@@ -107,6 +109,7 @@ ntfs-3g
 nvidia
 nvidia-lts
 nvm
+nwg-displays
 nwg-look
 orca
 os-prober
@@ -165,4 +168,6 @@ xorg-xinit
 yay
 yay-debug
 yelp
+zoxide
 zram-generator
+zsh

@@ -20,6 +20,7 @@ dust 1.2.3-1
 efibootmgr 18-3
 epiphany 49.0-1
 exfatprogs 1.2.9-1
+eza 0.23.4-1
 fastfetch 2.53.0-1
 firefox 143.0.4-1
 foot 1.24.0-1
@@ -97,6 +98,7 @@ linux-headers 6.16.10.arch1-1
 linux-lts 6.12.50-1
 loupe 49.0-2
 malcontent 0.13.1-1
+man-db 2.13.1-1
 mtools 1:4.0.49-1
 nano 8.6-1
 nautilus 49.0-1
@@ -107,6 +109,7 @@ ntfs-3g 2022.10.3-2
 nvidia 580.82.09-7
 nvidia-lts 1:580.82.09-5
 nvm 0.40.3-1
+nwg-displays 0.3.26-1
 nwg-look 1.0.6-1
 orca 49.1-1
 os-prober 1.83-1
@@ -165,4 +168,6 @@ xorg-xinit 1.4.4-1
 yay 12.5.2-2
 yay-debug 12.5.2-2
 yelp 49.0-1
+zoxide 0.9.8-2
 zram-generator 1.2.1-1
+zsh 5.9-5
