@@ -1,10 +1,17 @@
 # To open all chrome tabs from another OS
+
 `chrome://history/syncedTabs` and click `Open ALL`
+
 # Arch install script + dual boot video link
 
 [https://youtu.be/mWl4P6DOt9M?si=U_XNuPlwfXEiJDI0](https://youtu.be/mWl4P6DOt9M?si=U_XNuPlwfXEiJDI0)
 
 Install necessary nvidi and intel drivers using `Additional Packages`
+
+Things to do after installing arch
+[https://www.youtube.com/watch?v=odgD_RdJjCU&t=70s](https://www.youtube.com/watch?v=odgD_RdJjCU&t=70s)
+[https://youtu.be/4RxaQbb6KV4?si=mGKAUD33y1xkT-gb](https://youtu.be/4RxaQbb6KV4?si=mGKAUD33y1xkT-gb)
+[https://youtu.be/xhVS1HKwGWw?si=en3WgDO0fpc6k00F](https://youtu.be/xhVS1HKwGWw?si=en3WgDO0fpc6k00F)
 
 # for lsp error
 
