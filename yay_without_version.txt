@@ -120,6 +120,8 @@ nwg-look
 orca
 os-prober
 papers
+paru
+paru-debug
 pavucontrol
 pipewire
 pipewire-alsa
@@ -175,7 +177,6 @@ xf86-video-ati
 xf86-video-nouveau
 xorg-server
 xorg-xinit
-yay
 yay-debug
 yelp
 zoxide
