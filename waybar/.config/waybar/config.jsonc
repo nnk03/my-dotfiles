@@ -2,7 +2,7 @@
   "position": "top",
   "modules-left": ["custom/userhost", "hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
-  "modules-right": ["network", "pulseaudio", "battery", "clock"],
+  "modules-right": ["network", "bluetooth", "pulseaudio", "battery", "clock"],
   "custom/userhost": {
     // maybe make it more stylish
     "format": "{}",
@@ -35,6 +35,15 @@
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "<span size='13000' foreground='#f5e0dc'>  </span>Disconnected",
     "tooltip-format-wifi": "Signal Strenght: {signalStrength}%",
+  },
+  "bluetooth": {
+    "format-on": "  {status}",
+    "format-off": "  Off",
+    "format-connected": "  {device_alias}",
+    "format-connected-battery": "  {device_alias} ({device_battery}%)",
+    "class": "bluetooth",
+    "tooltip-format": "{controller_alias}\n{num_connections} device(s) connected",
+    "interval": 10,
   },
   "pulseaudio": {
     "format": "{icon}  {volume}%",
