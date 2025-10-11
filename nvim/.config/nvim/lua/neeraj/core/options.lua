@@ -21,7 +21,7 @@ opt.smartindent = true
 -- vim.cmd("set shiftwidth=3")
 
 -- line wrapping
-opt.wrap = true -- disable/enable line wrapping
+opt.wrap = false -- disable/enable line wrapping
 
 -- search settings
 opt.ignorecase = true -- ignore case when searching
