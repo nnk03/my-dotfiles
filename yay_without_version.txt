@@ -7,10 +7,12 @@ bluez-utils
 bpytop
 brightnessctl
 btop
+calc
 catppuccin-gtk-theme-mocha
 clang
 clang18
 clang19
+cmatrix
 decibels
 dkms
 docker
@@ -106,6 +108,9 @@ nautilus
 neovim
 network-manager-applet
 networkmanager
+noto-fonts
+noto-fonts-cjk
+noto-fonts-extra
 ntfs-3g
 nvidia
 nvidia-lts
@@ -124,6 +129,7 @@ polkit-kde-agent
 python-pip
 qt5-wayland
 qt6-wayland
+reflector
 rust
 rygel
 showtime
@@ -142,7 +148,10 @@ swaylock
 swaync
 tecla
 tmux
+tree
 ttf-cascadia-code-nerd
+ttf-dejavu
+ttf-droid
 uwsm
 vim
 vlc
