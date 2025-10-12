@@ -53,6 +53,7 @@ gnome-shell
 gnome-software
 gnome-system-monitor
 gnome-text-editor
+gnome-themes-extra
 gnome-tour
 gnome-tweaks
 gnome-user-docs

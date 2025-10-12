@@ -53,6 +53,7 @@ gnome-shell 1:49.0-2
 gnome-software 49.1-1
 gnome-system-monitor 49.1-1
 gnome-text-editor 49.0-1
+gnome-themes-extra 3.28+r6+g45b1d457-2
 gnome-tour 49.0-1
 gnome-tweaks 49.0-1
 gnome-user-docs 49.1-1
