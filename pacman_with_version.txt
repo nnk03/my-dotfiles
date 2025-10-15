@@ -2,6 +2,7 @@ baobab 49.0-1
 base 3-2
 base-devel 1-2
 bat 0.25.0-4
+blueberry 1.4.8-2
 bluez 5.84-1
 bluez-utils 5.84-1
 bpytop 1.0.68-2
@@ -118,6 +119,7 @@ nvidia-lts 1:580.95.05-3
 nvm 0.40.3-1
 nwg-displays 0.3.26-1
 nwg-look 1.0.6-1
+openbsd-netcat 1.229_1-2
 orca 49.3-1
 os-prober 1.83-1
 papers 49.1-1
@@ -161,6 +163,7 @@ vlc 3.0.21-30
 vulkan-intel 1:25.2.4-2
 vulkan-nouveau 1:25.2.4-2
 vulkan-radeon 1:25.2.4-2
+walker 2.5.0-1
 waybar 0.14.0-2
 wget 1.25.0-2
 wireless_tools 30.pre9-4

@@ -2,6 +2,7 @@ baobab
 base
 base-devel
 bat
+blueberry
 bluez
 bluez-utils
 bpytop
@@ -118,6 +119,7 @@ nvidia-lts
 nvm
 nwg-displays
 nwg-look
+openbsd-netcat
 orca
 os-prober
 papers
@@ -161,6 +163,7 @@ vlc
 vulkan-intel
 vulkan-nouveau
 vulkan-radeon
+walker
 waybar
 wget
 wireless_tools
