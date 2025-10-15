@@ -1,7 +1,7 @@
 {
   "position": "top",
   "modules-left": ["custom/userhost", "hyprland/workspaces"],
-  "modules-center": ["hyprland/window"],
+  // "modules-center": ["hyprland/window"],
   "modules-right": ["network", "bluetooth", "pulseaudio", "battery", "clock"],
   "custom/userhost": {
     // maybe make it more stylish
@@ -9,6 +9,13 @@
     "exec": "echo $(whoami)@$(hostname) : ",
     "interval": 60,
     "tooltip": false,
+  },
+  "hyprland/workspaces": {
+    "format": "{name}: {icon}",
+    "format-icons": {
+      "active": "",
+      "default": "",
+    },
   },
   "clock": {
     "format": "<span foreground='#f5c2e7'>   </span>{:%a %d %b %Y [ %d/%m/%y ] : %H:%M}",
