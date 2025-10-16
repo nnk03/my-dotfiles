@@ -2,7 +2,8 @@
   "position": "top",
   "modules-left": ["custom/userhost", "hyprland/workspaces"],
   // "modules-center": ["hyprland/window"],
-  "modules-right": ["network", "bluetooth", "pulseaudio", "battery", "clock"],
+  "modules-center": ["clock"],
+  "modules-right": ["network", "bluetooth", "pulseaudio", "battery"],
   "custom/userhost": {
     // maybe make it more stylish
     "format": "{}",
@@ -18,8 +19,10 @@
     },
   },
   "clock": {
-    "format": "<span foreground='#f5c2e7'>   </span>{:%a %d %b %Y [ %d/%m/%y ] : %H:%M}",
+    // "format": "<span foreground='#f5c2e7'>   </span>{:%a %d %b %Y [ %d/%m/%y ] : %H:%M}",
+    "format": "<span foreground='#f5c2e7'>   </span>{:%d/%m %a : %H:%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "tooltip": true,
   },
   "battery": {
     "states": {
@@ -32,7 +35,7 @@
     "format-charging": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
     "format-plugged": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
     "format-alt": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {time}",
-    "format-full": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
+    "format-full": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
     "format-icons": ["", "", "", "", ""],
     "tooltip-format": "{time}",
   },
