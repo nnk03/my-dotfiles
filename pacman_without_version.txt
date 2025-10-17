@@ -164,7 +164,6 @@ vlc
 vulkan-intel
 vulkan-nouveau
 vulkan-radeon
-walker
 waybar
 wget
 wireless_tools

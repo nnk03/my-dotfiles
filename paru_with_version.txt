@@ -101,7 +101,7 @@ libva-nvidia-driver 0.0.14-1
 linux 6.17.2.arch1-1
 linux-firmware 20251011-1
 linux-headers 6.17.2.arch1-1
-linux-lts 6.12.52-1
+linux-lts 6.12.53-1
 loupe 49.0-2
 malcontent 0.13.1-1
 man-db 2.13.1-1
@@ -116,7 +116,7 @@ noto-fonts-cjk 20240730-1
 noto-fonts-extra 1:2025.10.01-1
 ntfs-3g 2022.10.3-2
 nvidia 580.95.05-3
-nvidia-lts 1:580.95.05-3
+nvidia-lts 1:580.95.05-4
 nvm 0.40.3-1
 nwg-displays 0.3.26-1
 nwg-look 1.0.6-1
@@ -139,7 +139,7 @@ reflector 2023-3
 rust 1:1.90.0-3
 rygel 1:45.0-1
 showtime 49.0-1
-simple-scan 49.0.1-1
+simple-scan 49.1-1
 slurp 1.5.0-1
 smartmontools 7.5-1
 snapshot 49.0-1
@@ -164,7 +164,6 @@ vlc 3.0.21-30
 vulkan-intel 1:25.2.4-2
 vulkan-nouveau 1:25.2.4-2
 vulkan-radeon 1:25.2.4-2
-walker 2.5.1-1
 waybar 0.14.0-2
 wget 1.25.0-2
 wireless_tools 30.pre9-4
