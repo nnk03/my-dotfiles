@@ -2,6 +2,12 @@
 
 `chrome://history/syncedTabs` and click `Open ALL`
 
+if using firefox and vertical tab group will sometimes be in light mode
+change the default theme to dark mode and use a theme extension
+in `about:addons` ? with the theme name `Black Leader 3440 pixels`
+
+[https://addons.mozilla.org/en-US/firefox/addon/black-leader-3440-pixels/](https://addons.mozilla.org/en-US/firefox/addon/black-leader-3440-pixels/)
+
 # Arch install script + dual boot video link
 
 [https://youtu.be/mWl4P6DOt9M?si=U_XNuPlwfXEiJDI0](https://youtu.be/mWl4P6DOt9M?si=U_XNuPlwfXEiJDI0)
