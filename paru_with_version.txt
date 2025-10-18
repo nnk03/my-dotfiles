@@ -24,10 +24,10 @@ efibootmgr 18-3
 epiphany 49.1-1
 exfatprogs 1.3.0-1
 eza 0.23.4-1
-fastfetch 2.53.0-1
+fastfetch 2.54.0-1
 firefox 144.0-1
 foot 1.25.0-1
-fzf 0.65.2-1
+fzf 0.66.0-1
 gdm 49.1-1
 git 2.51.1-1
 gnome-backgrounds 49.0-1
@@ -92,7 +92,7 @@ jdk-openjdk 25.u36-1
 kitty 0.43.1-1
 lazydocker 0.24.1-2
 lazygit 0.55.1-1
-less 1:679-1
+less 1:685-1
 lib32-nvidia-utils 580.95.05-1
 libpulse 17.0+r88+geee0e8f22-1
 libreoffice-fresh 25.8.2-3
