@@ -1,3 +1,8 @@
+# Man pages
+
+Install man-db and man-pages and run `sudo mandb`
+test it with `man malloc` `man atoi`
+
 # To open all chrome tabs from another OS
 
 `chrome://history/syncedTabs` and click `Open ALL`
