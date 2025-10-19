@@ -184,6 +184,7 @@ xorg-server 21.1.18-2
 xorg-xinit 1.4.4-1
 yay-debug 12.5.2-2
 yelp 49.0-1
+zip 3.0-11
 zoxide 0.9.8-2
 zram-generator 1.2.1-1
 zsh 5.9-5
