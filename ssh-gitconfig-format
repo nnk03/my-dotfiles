@@ -1,0 +1,5 @@
+Host github.com
+	HostName github.com
+	AddKeysToAgent yes
+	IdentityFile <path-to-identity-file>
+
