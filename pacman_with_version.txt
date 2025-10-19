@@ -154,6 +154,8 @@ swayidle 1.8.0-2
 swaylock 1.8.3-1
 swaync 0.12.2-1
 tecla 49.0-1
+tig 2.6.0-1
+tk 8.6.16-1
 tmux 3.5_a-1
 tree 2.2.1-1
 ttf-cascadia-code-nerd 3.4.0-1

@@ -154,6 +154,8 @@ swayidle
 swaylock
 swaync
 tecla
+tig
+tk
 tmux
 tree
 ttf-cascadia-code-nerd
