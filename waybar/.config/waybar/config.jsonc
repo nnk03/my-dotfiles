@@ -53,6 +53,7 @@
     "format-connected-battery": "  {device_alias} ({device_battery}%)",
     "class": "bluetooth",
     "tooltip-format": "{controller_alias}\n{num_connections} device(s) connected",
+    "on-click": "blueberry",
     "interval": 10,
   },
   "pulseaudio": {
