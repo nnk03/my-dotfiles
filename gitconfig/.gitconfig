@@ -6,7 +6,7 @@
 [alias]
 	st = status
 [core]
-	editor = "/home/neeraj/.nvim-linux-x86_64/bin/nvim"
+	editor = "nvim"
 [diff]
 	tool = nvimdiff
 ; [merge]
