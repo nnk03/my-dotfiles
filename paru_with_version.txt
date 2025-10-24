@@ -15,6 +15,7 @@ clang 21.1.4-2
 clang18 18.1.8-2
 clang19 19.1.7-1
 cmatrix 2.0-4
+croc 1:10.2.7-1
 decibels 49.0-1
 dkms 3.2.2-1
 docker 1:28.5.1-1
@@ -100,7 +101,7 @@ libreoffice-fresh 25.8.2-4
 libva-intel-driver 2.4.1-5
 libva-nvidia-driver 0.0.14-1
 linux 6.17.4.arch2-1
-linux-firmware 20251011-1
+linux-firmware 20251021-1
 linux-headers 6.17.4.arch2-1
 linux-lts 6.12.53-1
 loupe 49.1-1
@@ -109,7 +110,7 @@ man-db 2.13.1-1
 man-pages 6.15-1
 mtools 1:4.0.49-1
 nano 8.6-1
-nautilus 49.1-1
+nautilus 49.1-2
 neovim 0.11.4-1
 network-manager-applet 1.36.0-1
 networkmanager 1.54.1-1
@@ -122,7 +123,7 @@ nvidia-lts 1:580.95.05-4
 nvm 0.40.3-1
 nwg-displays 0.3.26-1
 nwg-look 1.0.6-1
-openbsd-netcat 1.229_1-2
+openbsd-netcat 1.234_1-1
 orca 49.4-1
 os-prober 1.83-1
 papers 49.1-1
@@ -133,7 +134,7 @@ pipewire 1:1.4.9-1
 pipewire-alsa 1:1.4.9-1
 pipewire-jack 1:1.4.9-1
 pipewire-pulse 1:1.4.9-1
-polkit-kde-agent 6.4.5-1
+polkit-kde-agent 6.5.0-1
 python-pip 25.2-1
 qt5-wayland 5.15.17+kde+r57-1
 qt6-wayland 6.10.0-1
