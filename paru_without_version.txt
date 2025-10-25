@@ -1,3 +1,8 @@
+arch-wiki-cli
+arch-wiki-dmenu-git
+arch-wiki-docs
+arch-wiki-lite
+arch-wiki-search
 baobab
 base
 base-devel

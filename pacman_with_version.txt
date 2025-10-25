@@ -1,3 +1,8 @@
+arch-wiki-cli 0.4-2
+arch-wiki-dmenu-git r4.3096664-1
+arch-wiki-docs 20250801-1
+arch-wiki-lite 20250801-1
+arch-wiki-search 20250829-1
 baobab 49.0-1
 base 3-2
 base-devel 1-2
