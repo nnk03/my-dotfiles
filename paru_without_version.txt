@@ -1,4 +1,3 @@
-arch-wiki-dmenu-git
 arch-wiki-docs
 arch-wiki-lite
 arch-wiki-search
@@ -33,7 +32,6 @@ eza
 fastfetch
 firefox
 foot
-fuzzel
 fzf
 gdm
 git
