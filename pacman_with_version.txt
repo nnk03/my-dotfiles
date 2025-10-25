@@ -30,7 +30,7 @@ fastfetch 2.54.0-1
 firefox 144.0-1
 foot 1.25.0-1
 fzf 0.66.0-1
-gdm 49.1-1
+gdm 49.1-2
 git 2.51.1-2
 gnome-backgrounds 49.0-1
 gnome-calculator 49.1.1-1
@@ -100,9 +100,9 @@ libpulse 17.0+r88+geee0e8f22-1
 libreoffice-fresh 25.8.2-4
 libva-intel-driver 2.4.1-5
 libva-nvidia-driver 0.0.14-1
-linux 6.17.4.arch2-1
+linux 6.17.5.arch1-1
 linux-firmware 20251021-1
-linux-headers 6.17.4.arch2-1
+linux-headers 6.17.5.arch1-1
 linux-lts 6.12.53-1
 loupe 49.1-1
 malcontent 0.13.1-1
@@ -118,7 +118,7 @@ noto-fonts 1:2025.10.01-1
 noto-fonts-cjk 20240730-1
 noto-fonts-extra 1:2025.10.01-1
 ntfs-3g 2022.10.3-2
-nvidia 580.95.05-6
+nvidia 580.95.05-7
 nvidia-lts 1:580.95.05-4
 nvm 0.40.3-1
 nwg-displays 0.3.26-1
@@ -166,9 +166,9 @@ ttf-droid 20121017-11
 uwsm 0.24.1-1
 vim 9.1.1841-1
 vlc 3.0.21-30
-vulkan-intel 1:25.2.5-1
-vulkan-nouveau 1:25.2.5-1
-vulkan-radeon 1:25.2.5-1
+vulkan-intel 1:25.2.5-2
+vulkan-nouveau 1:25.2.5-2
+vulkan-radeon 1:25.2.5-2
 waybar 0.14.0-3
 wget 1.25.0-2
 wireless_tools 30.pre9-4
