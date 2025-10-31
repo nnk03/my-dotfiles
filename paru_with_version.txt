@@ -189,7 +189,6 @@ xf86-video-ati 1:22.0.0-2
 xf86-video-nouveau 1.0.18-1
 xorg-server 21.1.18-2
 xorg-xinit 1.4.4-1
-yay-debug 12.5.2-2
 yelp 49.0-1
 zip 3.0-11
 zoxide 0.9.8-2

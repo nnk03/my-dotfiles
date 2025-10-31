@@ -93,7 +93,7 @@ inetutils
 intel-media-driver
 intel-ucode
 iwd
-jdk-openjdk
+# jdk-openjdk
 kitty
 lazydocker
 lazygit
@@ -189,7 +189,6 @@ xf86-video-ati
 xf86-video-nouveau
 xorg-server
 xorg-xinit
-yay-debug
 yelp
 zip
 zoxide
