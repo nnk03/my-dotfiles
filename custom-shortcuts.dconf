@@ -1,0 +1,12 @@
+[/]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
+
+[custom-keybindings/custom0]
+binding='<Super>Return'
+command='kitty'
+name='terminal'
+
+[custom-keybindings/custom1]
+binding='<Shift><Super>b'
+command='google-chrome'
+name='chrome'
