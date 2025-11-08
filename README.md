@@ -3,6 +3,11 @@
 Install man-db and man-pages and run `sudo mandb`
 test it with `man malloc` `man atoi`
 
+# arch install broken ?
+
+https://bbs.archlinux.org/viewtopic.php?id=277800
+Refer [./arch_broken_install_repair.txt](./arch_broken_install_repair.txt)
+
 # To open all chrome tabs from another OS
 
 `chrome://history/syncedTabs` and click `Open ALL`

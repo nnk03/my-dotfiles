@@ -1,0 +1,204 @@
+Here’s the same content as plain raw text (no Markdown formatting, no code blocks):
+
+Arch Linux Boot Repair After EFI Overwrite
+Issue:
+Broken Arch
+initramfs not found
+fallback initramfs not found
+You also mentioned having an Arch Linux USB stick available.
+Diagnosis:
+This error means your kernel can’t find or load the initramfs image, often because of:
+
+
+Missing or corrupted /boot/initramfs-linux.img
+
+
+Bootloader pointing to the wrong location
+
+
+Or, as later discovered, your EFI partition was overwritten by Ubuntu
+
+
+Step-by-Step Recovery
+
+
+Boot into the Arch Live USB
+Boot from your Arch USB and get to the live shell (root@archiso prompt).
+
+
+Identify your root partition
+Run: lsblk -f
+Example output:
+nvme0n1p1  vfat   EFI
+nvme0n1p2  ext4   arch-root
+
+
+Mount your partitions
+mount /dev/nvme0n1p2 /mnt
+mount /dev/nvme0n1p1 /mnt/boot
+
+
+If you use Btrfs or LUKS, the mount steps differ slightly.
+
+
+Chroot into your system
+arch-chroot /mnt
+
+
+Rebuild initramfs
+mkinitcpio -P
+Expected output:
+==> Building image from preset: 'default'
+==> Building image from preset: 'fallback'
+
+
+If there’s an error like:
+invalid option -k -- '/boot/vmlinuz-linux-ltx' must be readable
+it means your kernel file (/boot/vmlinuz-linux-ltx) is missing.
+Why That Error Happens:
+mkinitcpio was trying to build an initramfs for a kernel preset (linux-ltx) that no longer exists.
+Common causes:
+
+
+Kernel package removed or renamed
+
+
+/boot wasn’t mounted during updates
+
+
+Kernel files deleted after EFI partition changes
+
+
+Fixing the Missing Kernel
+
+
+Confirm /boot is mounted correctly:
+mount | grep boot
+
+
+Check installed kernels:
+pacman -Q | grep linux
+Example:
+linux 6.11.3.arch1-1
+linux-lts 6.6.57-1
+
+
+If your missing kernel (e.g. linux-ltx) isn’t listed, reinstall one:
+pacman -S linux linux-headers
+or for LTS:
+pacman -S linux-lts linux-lts-headers
+
+
+Rebuild initramfs again:
+mkinitcpio -P
+
+
+Update your bootloader:
+For GRUB:
+grub-mkconfig -o /boot/grub/grub.cfg
+For systemd-boot:
+bootctl update
+
+
+Exit and reboot:
+exit
+umount -R /mnt
+reboot
+
+
+Root Cause Discovered:
+While installing Ubuntu, it overwrote Arch’s EFI partition.
+Your root filesystem is fine, but the EFI/boot partition lost all Arch kernel and bootloader files.
+Full Recovery After EFI Overwrite
+
+
+Boot from the Arch ISO
+At the root@archiso prompt.
+
+
+Mount your Arch root and EFI partitions
+lsblk -f
+Assume:
+Root: /dev/nvme0n1p2
+EFI: /dev/nvme0n1p1
+mount /dev/nvme0n1p2 /mnt
+mount /dev/nvme0n1p1 /mnt/boot
+ls /mnt/boot  (you’ll likely see Ubuntu’s files)
+
+
+Chroot into Arch
+arch-chroot /mnt
+
+
+Reinstall your kernel
+pacman -S linux linux-headers
+
+
+Reinstall your bootloader
+
+
+If using systemd-boot:
+bootctl install
+Then recreate the Arch entry:
+cat > /boot/loader/entries/arch.conf
+title   Arch Linux
+linux   /vmlinuz-linux
+initrd  /initramfs-linux.img
+options root=PARTUUID=$(blkid -s PARTUUID -o value /dev/nvme0n1p2) rw
+Ensure /boot/loader/loader.conf exists:
+cat > /boot/loader/loader.conf
+default arch.conf
+timeout 3
+console-mode max
+editor no
+If using GRUB:
+pacman -S grub efibootmgr
+grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
+grub-mkconfig -o /boot/grub/grub.cfg
+
+
+Exit and reboot:
+exit
+umount -R /mnt
+reboot
+
+
+Optional: Dual Boot with Ubuntu
+If you want to keep Ubuntu’s bootloader:
+
+
+For systemd-boot: add an entry pointing to /boot/efi/EFI/ubuntu/grubx64.efi
+
+
+For GRUB: it will detect Ubuntu automatically when regenerating config:
+grub-mkconfig -o /boot/grub/grub.cfg
+
+
+Summary:
+
+
+Ubuntu overwrote your EFI partition.
+
+
+Arch kernel and initramfs were deleted from /boot.
+
+
+Fixed by reinstalling kernel and bootloader.
+
+
+Boot restored successfully.
+
+
+Commands Recap:
+mount /dev/nvme0n1p2 /mnt
+mount /dev/nvme0n1p1 /mnt/boot
+arch-chroot /mnt
+pacman -S linux linux-headers
+bootctl install  (or grub-install ...)
+mkinitcpio -P
+bootctl update   (or grub-mkconfig -o /boot/grub/grub.cfg)
+exit
+umount -R /mnt
+reboot
+
+You can now copy and paste this text into any file (like arch_efi_repair.txt or .md) for safekeeping.
