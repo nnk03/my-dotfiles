@@ -16,7 +16,7 @@ export EDITOR='vim'
 export VISUAL='vim'
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-# . "$HOME/.cargo/env"
+. "$HOME/.cargo/env"
 
 
 # for screensharing
