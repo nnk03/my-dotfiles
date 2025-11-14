@@ -33,7 +33,12 @@ NamespaceIndentation                      : All
 PointerBindsToType                        : true
 SpacesBeforeTrailingComments              : 1
 SpacesInAngles                            : false
-SpacesInSquareBrackets                    : false
+SpacesInParens: Custom
+SpacesInParensOptions:
+  ExceptDoubleParentheses                 : false
+  InConditionalStatements                 : true
+  Other: true
+SpacesInSquareBrackets                    : true
 # TabWidth                                  : 4
 TabWidth                                  : 3
 # UseTab                                    : ForIndentation
