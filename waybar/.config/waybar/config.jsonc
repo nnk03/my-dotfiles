@@ -1,6 +1,7 @@
 {
   "position": "top",
-  "modules-left": ["custom/userhost", "hyprland/workspaces"],
+   // make this to "hyprland/workspaces" if on hyprland
+  "modules-left": ["custom/userhost", "sway/workspaces"],
   // "modules-center": ["hyprland/window"],
   "modules-center": ["clock"],
   "modules-right": ["network", "bluetooth", "pulseaudio", "battery"],
@@ -11,10 +12,11 @@
     "interval": 60,
     "tooltip": false,
   },
-  "hyprland/workspaces": {
+  "sway/workspaces": {
     "format": "{name}: {icon}",
     "format-icons": {
-      "active": "",
+      // "active": "", // for hyprland
+      "focused": "", // for sway
       "default": "",
     },
   },
@@ -53,7 +55,8 @@
     "format-connected-battery": "  {device_alias} ({device_battery}%)",
     "class": "bluetooth",
     "tooltip-format": "{controller_alias}\n{num_connections} device(s) connected",
-    "on-click": "blueberry",
+    // "on-click": "blueberry", // for hyprland
+    "on-click": "blueman-manager", // for sway, install blueman
     "interval": 10,
   },
   "pulseaudio": {
