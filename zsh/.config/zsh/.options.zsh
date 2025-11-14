@@ -15,8 +15,8 @@ unsetopt share_history
 export EDITOR='vim'
 export VISUAL='vim'
 
-# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-# . "$HOME/.cargo/env"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+. "$HOME/.cargo/env"
 
 
 # for screensharing
@@ -29,8 +29,8 @@ bindkey '^ ' autosuggest-accept
 bindkey '^o' clear-screen
 
 
-# export PATH="$HOME/.nvim-linux-x86_64/bin/./:$PATH"
-# export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.nvim-linux-x86_64/bin/./:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 # export PATH="$HOME/.alacritty/target/release:$PATH"
 # alacritty can be installed using sudo apt in ubuntu 24.04
 
@@ -83,4 +83,4 @@ function y() {
 
 setopt HIST_IGNORE_SPACE
 
-source /usr/share/nvm/init-nvm.sh
+# source /usr/share/nvm/init-nvm.sh
