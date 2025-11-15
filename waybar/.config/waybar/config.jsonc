@@ -1,6 +1,6 @@
 {
   "position": "top",
-   // make this to "hyprland/workspaces" if on hyprland
+  // make this to "hyprland/workspaces" if on hyprland
   "modules-left": ["custom/userhost", "sway/workspaces"],
   // "modules-center": ["hyprland/window"],
   "modules-center": ["clock"],
