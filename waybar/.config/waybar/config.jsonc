@@ -1,7 +1,7 @@
 {
   "position": "top",
   // make this to "hyprland/workspaces" if on hyprland
-  "modules-left": ["custom/userhost", "sway/workspaces"],
+  "modules-left": ["custom/userhost", "hyprland/workspaces"],
   // "modules-center": ["hyprland/window"],
   "modules-center": ["clock"],
   "modules-right": ["network", "bluetooth", "pulseaudio", "battery"],
@@ -12,11 +12,11 @@
     "interval": 60,
     "tooltip": false,
   },
-  "sway/workspaces": {
+  "hyprland/workspaces": {
     "format": "{name}: {icon}",
     "format-icons": {
-      // "active": "", // for hyprland
-      "focused": "", // for sway
+      "active": "", // for hyprland
+      // "focused": "", // for sway
       "default": "",
     },
   },
