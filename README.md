@@ -1,3 +1,7 @@
+# On fedora
+
+Use `sudo dnf copr enable <repo>?`
+
 # Man pages
 
 Install man-db and man-pages and run `sudo mandb`
