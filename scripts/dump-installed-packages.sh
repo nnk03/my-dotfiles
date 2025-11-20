@@ -75,7 +75,7 @@ case "$PACKAGE_MANAGER" in
 
     dnf)
         # Remove header line, print only package names
-        dnf list installed | awk 'NR>1 {print $1}' | cut -d'.' -f1 > "$OUT"
+        dnf list --installed | awk 'NR>1 {print $1}' | cut -d'.' -f1 > "$OUT"
         ;;
 
     brew)
