@@ -1,3 +1,5 @@
+7zip
+7zip-standalone
 Box2D
 ImageMagick
 ImageMagick-libs
@@ -375,12 +377,14 @@ exfatprogs
 exiv2
 exiv2-libs
 expat
+eza
 f2fs-tools
 f43-backgrounds-base
 f43-backgrounds-gnome
 faad2-libs
 fastfetch
 fcft
+fd-find
 fdk-aac-free
 fedora-bookmarks
 fedora-chromium-config
@@ -1911,6 +1915,7 @@ realtek-firmware
 redhat-menus
 redland
 rest
+resvg
 rhash
 ripgrep
 rit-meera-new-fonts
@@ -2009,6 +2014,7 @@ sudo
 sudo-python-plugin
 sushi
 svt-av1-libs
+swaybg
 swaylock
 switcheroo-control
 swtpm
@@ -2198,6 +2204,7 @@ xz
 xz-devel
 xz-libs
 yajl
+yazi
 yelp
 yelp-libs
 yelp-xsl
