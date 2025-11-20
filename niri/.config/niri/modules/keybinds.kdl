@@ -1,0 +1,9 @@
+binds {
+   Mod+Shift+B hotkey-overlay-title="Open Chrome" {
+       spawn "google-chrome-stable --new-window --ozone-platform=x11";
+   }
+
+   Mod+Shift+P hotkey-overlay-title="Open Chrome (Incognito)" {
+       spawn "google-chrome-stable --new-window --incognito --ozone-platform=x11";
+   }
+}
