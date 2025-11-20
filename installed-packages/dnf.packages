@@ -668,10 +668,15 @@ gstreamer1-plugins-good-qt6
 gstreamer1-plugins-ugly-free
 gtest
 gtk-layer-shell
+gtk-session-lock
 gtk-update-icon-cache
 gtk-vnc2
 gtk3
 gtk4
+gtklock
+gtklock-playerctl-module
+gtklock-powerbar-module
+gtklock-userinfo-module
 gtkmm3
 gtkmm4
 gtksourceview4
