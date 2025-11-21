@@ -1,0 +1,70 @@
+{
+  "position": "top",
+  // make this to "hyprland/workspaces" if on hyprland
+  "modules-left": ["custom/userhost", "hyprland/workspaces"],
+  // "modules-center": ["hyprland/window"],
+  "modules-center": ["clock"],
+  "modules-right": ["network", "bluetooth", "pulseaudio", "battery"],
+  "custom/userhost": {
+    // maybe make it more stylish
+    "format": "{}",
+    "exec": "echo $(whoami)@$(hostname) : ",
+    "interval": 60,
+    "tooltip": false,
+  },
+  "hyprland/workspaces": {
+    "format": "{name}: {icon}",
+    "format-icons": {
+      "active": "", // for hyprland
+      // "focused": "", // for sway
+      "default": "",
+    },
+  },
+  "clock": {
+    // "format": "<span foreground='#f5c2e7'>   </span>{:%a %d %b %Y [ %d/%m/%y ] : %H:%M}",
+    "format": "<span foreground='#f5c2e7'>   </span>{:%d/%m %a : %H:%M}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "tooltip": true,
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15,
+    },
+    "format": "<span size='13000' foreground='#a6e3a1'>{icon} </span> {capacity}%",
+    "format-warning": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {capacity}%",
+    "format-critical": "<span size='13000' foreground='#E38C8F'>{icon} </span> {capacity}%",
+    "format-charging": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
+    "format-plugged": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
+    "format-alt": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {time}",
+    "format-full": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "tooltip-format": "{time}",
+  },
+  "network": {
+    "format-wifi": "<span size='13000' foreground='#f5e0dc'>  </span>{essid}",
+    "format-ethernet": "<span size='13000' foreground='#f5e0dc'>󰤭  </span> Disconnected",
+    "format-linked": "{ifname} (No IP) ",
+    "format-disconnected": "<span size='13000' foreground='#f5e0dc'>  </span>Disconnected",
+    "tooltip-format-wifi": "Signal Strenght: {signalStrength}%",
+  },
+  "bluetooth": {
+    "format-on": "  {status}",
+    "format-off": "  Off",
+    "format-connected": "  {device_alias}",
+    "format-connected-battery": "  {device_alias} ({device_battery}%)",
+    "class": "bluetooth",
+    "tooltip-format": "{controller_alias}\n{num_connections} device(s) connected",
+    // "on-click": "blueberry", // for hyprland
+    "on-click": "blueman-manager", // for sway, install blueman
+    "interval": 10,
+  },
+  "pulseaudio": {
+    "format": "{icon}  {volume}%",
+    "format-muted": "",
+    "format-icons": {
+      "default": ["", "", " "],
+    },
+    "on-click": "pavucontrol",
+  },
+}
