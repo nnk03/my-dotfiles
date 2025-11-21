@@ -477,6 +477,7 @@ gettext-runtime
 ghostscript
 ghostscript-tools-fontutils
 ghostscript-tools-printing
+ghostty
 giflib
 git
 git-core
@@ -677,6 +678,7 @@ gtk-update-icon-cache
 gtk-vnc2
 gtk3
 gtk4
+gtk4-layer-shell
 gtklock
 gtklock-playerctl-module
 gtklock-powerbar-module
@@ -1363,6 +1365,7 @@ libxcb-devel
 libxcrypt
 libxcrypt-devel
 libxcvt
+libxdo
 libxdp
 libxkbcommon
 libxkbcommon-devel
@@ -2010,6 +2013,7 @@ startup-notification
 stix-fonts
 stoken-libs
 stow
+strace
 sudo
 sudo-python-plugin
 sushi
@@ -2172,6 +2176,7 @@ xdg-desktop-portal-hyprland
 xdg-user-dirs
 xdg-user-dirs-gtk
 xdg-utils
+xdotool
 xdriinfo
 xen-libs
 xen-licenses
