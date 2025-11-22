@@ -337,6 +337,11 @@ window-rule {
    open-maximized true
 }
 
+// window-rule {
+//    match app-id=".{0,100}ghostty"
+//    opacity 0.8
+// }
+
 window-rule {
     geometry-corner-radius 10
     clip-to-geometry true
@@ -676,3 +681,18 @@ binds {
     }
 }
 
+// Block out mako notifications from screencasts.
+layer-rule {
+    match namespace="^notifications$"
+
+    block-out-from "screencast"
+}
+
+// layer-rule {
+//     match namespace=".{0,100}ghostty"
+//     opacity 0.9
+// }
+
+// layer-rule {
+//    match namespace
+// }
