@@ -3,6 +3,20 @@
 # usage:
 #   ./auto-install-packages.sh <package-manager> <file> [--dryRun]
 
+# -----------------------------
+# Help option
+# -----------------------------
+if [[ "${1:-}" == "-h" || "${1:-}" == "--help" ]]; then
+    echo "Usage: $0 <package-manager> <file-with-packages> [--dryRun]"
+    echo
+    echo "Example:"
+    echo "  $0 dnf dnf.packages"
+    echo "  $0 pacman arch.packages --dryRun"
+    echo
+    echo "Supported package managers: apt, brew, pacman, paru, yay, dnf"
+    exit 0
+fi
+
 PACKAGE_MANAGER="$1"
 PKG_FILE="$2"
 DRY_RUN=false

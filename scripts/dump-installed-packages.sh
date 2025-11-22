@@ -2,6 +2,17 @@
 set -euo pipefail
 
 # -----------------------------------------
+# Help option
+# -----------------------------------------
+if [[ "${1:-}" == "-h" || "${1:-}" == "--help" ]]; then
+    echo "Usage: $0 <package-manager> <output-file>"
+    echo
+    echo "Example:"
+    echo "  $0 dnf ../installed-packages/dnf.packages"
+    exit 0
+fi
+
+# -----------------------------------------
 # Usage check
 # -----------------------------------------
 if [[ $# -ne 2 ]]; then

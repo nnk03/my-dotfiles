@@ -15,11 +15,6 @@ systemctl --user add-wants niri.service dms
 Install man-db and man-pages and run `sudo mandb`
 test it with `man malloc` `man atoi`
 
-# arch install broken ?
-
-https://bbs.archlinux.org/viewtopic.php?id=277800
-Refer [./arch_broken_install_repair.txt](./arch_broken_install_repair.txt)
-
 # To open all chrome tabs from another OS
 
 `chrome://history/syncedTabs` and click `Open ALL`
@@ -29,37 +24,6 @@ change the default theme to dark mode and use a theme extension
 in `about:addons` ? with the theme name `Black Leader 3440 pixels`
 
 [https://addons.mozilla.org/en-US/firefox/addon/black-leader-3440-pixels/](https://addons.mozilla.org/en-US/firefox/addon/black-leader-3440-pixels/)
-
-# Arch install script + dual boot video link
-
-[https://youtu.be/mWl4P6DOt9M?si=U_XNuPlwfXEiJDI0](https://youtu.be/mWl4P6DOt9M?si=U_XNuPlwfXEiJDI0)
-
-Install necessary nvidi and intel drivers using `Additional Packages`
-
-Things to do after installing arch
-[https://www.youtube.com/watch?v=odgD_RdJjCU&t=70s](https://www.youtube.com/watch?v=odgD_RdJjCU&t=70s)
-[https://youtu.be/4RxaQbb6KV4?si=mGKAUD33y1xkT-gb](https://youtu.be/4RxaQbb6KV4?si=mGKAUD33y1xkT-gb)
-[https://youtu.be/xhVS1HKwGWw?si=en3WgDO0fpc6k00F](https://youtu.be/xhVS1HKwGWw?si=en3WgDO0fpc6k00F)
-
-# for lsp error
-
-```
-LSP] Format request failed, no matching language servers.
-              [LSP] Format request failed, no matching language servers.
-                      [null-ls] failed to run generator: ....local/share/nvim/lazy/none-ls.nvim/lua/null-ls/loop.lua:165: command prettier is not executable (make sure it's installed and on your $PATH)
-
-```
-
-```sh
-npm install -g prettier
-
-```
-
-# for hyprland in arch
-
-[https://youtu.be/2CP_9-jCV6A?si=OOMukqO3WglVdpYd](https://youtu.be/2CP_9-jCV6A?si=OOMukqO3WglVdpYd)
-[https://youtu.be/KA1jv40q9lQ?si=abGV9ojKdYda5cxz](https://youtu.be/KA1jv40q9lQ?si=abGV9ojKdYda5cxz)
-[https://youtu.be/omhJMH9lPPc?si=gFUZV_qSo11wY1nW](https://youtu.be/omhJMH9lPPc?si=gFUZV_qSo11wY1nW)
 
 # Multimonitor with lenovo-loq
 
@@ -75,6 +39,8 @@ GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nvidia-drm.modeset=1"
 
 Then
 
+Check what is the command for fedora
+Below is just an example
 ```sh
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
@@ -84,32 +50,12 @@ sudo pacman -S mesa vulkan-intel intel-media-driver
 sudo nano /etc/pacman.conf
 ```
 
-Uncomment the lines for [multilib]:
-
-```
-[multilib]
-Include = /etc/pacman.d/mirrorlist
-
-```
-
-```sh
-sudo pacman -Syu
-sudo pacman -S nvidia-dkms nvidia-utils lib32-nvidia-utils egl-wayland
-```
-
-```sh
-sudo pacman -S intel-ucode
-sudo pacman -S nvidia nvidia-utils
-sudo pacman -S nvidia-lts # if linux-ltx is installed
-
-```
-
 # Configuration for my Linux Machine
 
-First use `my-linux` repo to run the `setup.sh` script and then
-run the `stow_setup.sh`
 
-Run `./install_packages.sh` to install all necessary packages
+check the help string of the following commands
+Use [auto-install-packages.sh](./scripts/auto-install-packages.sh)
+Use [dump-installed-packages.sh](./scripts/dump-installed-packages.sh)
 
 Use GNU Stow (except for powerlevel10k and swaylock and fonts)
 
