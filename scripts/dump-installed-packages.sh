@@ -76,6 +76,15 @@ case "$PACKAGE_MANAGER" in
     dnf)
         # Remove header line, print only package names
         dnf list --installed | awk 'NR>1 {print $1}' | cut -d'.' -f1 > "$OUT"
+
+		  COPR_OUT="${OUT}.copr.enabled"
+		  if [[ -f "$COPR_OUT" ]]; then
+			  mv "$COPR_OUT" "$COPR_OUT.bak"
+			  echo "Backup created -> $COPR_OUT.bak"
+		  fi
+
+		  dnf copr list | awk ' { print $1 } ' > "$COPR_OUT"
+		  echo "COPR repo enabled saved in $COPR_OUT"
         ;;
 
     brew)

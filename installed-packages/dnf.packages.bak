@@ -201,6 +201,7 @@ composefs-libs
 compsize
 conmon
 container-selinux
+containerd
 containers-common
 containers-common-extra
 coreutils
@@ -337,6 +338,8 @@ dnf4-plugin-notify-PackageKit
 dnf5
 dnf5-plugins
 dnsmasq
+docker-buildx
+docker-cli
 dos2unix
 dosfstools
 dotconf
@@ -346,6 +349,7 @@ dracut-config-rescue
 dracut-live
 dracut-network
 dracut-squash
+du-dust
 duktape
 e2fsprogs
 e2fsprogs-libs
@@ -865,6 +869,7 @@ langpacks-core-en
 langpacks-en
 langpacks-fonts-en
 langtable
+lazydocker
 lazygit
 lcms2
 leptonica
@@ -1451,6 +1456,9 @@ meson
 microcode_ctl
 mkpasswd
 mobile-broadband-provider-info
+moby-engine
+moby-engine-nano
+moby-filesystem
 mod_dnssd
 mod_http2
 mod_lua
@@ -1661,6 +1669,7 @@ perl-overloading
 perl-parent
 perl-podlators
 perl-vars
+pigz
 pinentry
 pinentry-gnome3
 pinfo
@@ -1938,8 +1947,10 @@ rsync
 rsyslog
 rtkit
 rubberband-libs
+runc
 rust
 rust-std-static
+rustfmt
 rutabaga-gfx-ffi
 rygel
 samba-client
@@ -2054,6 +2065,7 @@ texlive-lib
 thermald
 thrift
 time
+tini-static
 tinysparql
 tiwilink-firmware
 tmux

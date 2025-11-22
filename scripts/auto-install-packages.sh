@@ -58,6 +58,43 @@ if [[ "$DRY_RUN" == true ]]; then
     echo
 fi
 
+# for dnf enabled copr repos if not yet enabled
+# File path is assumed to be <input-file>.copr.enabled
+enable_coprs_if_needed() {
+    local copr_file="${PKG_FILE}.copr.enabled"
+
+    if [[ ! -f "$copr_file" ]]; then
+        echo "No COPR list found ($copr_file). Skipping COPR enable step."
+        return
+    fi
+
+    echo "Checking COPR repos from $copr_file ..."
+    echo
+
+    dnf copr list | awk ' {print $1 } ' > /tmp/current_coprs.txt
+
+    while IFS= read -r copr; do
+        [[ -z "$copr" || "$copr" =~ ^# ]] && continue
+
+        if grep -q "$copr" /tmp/current_coprs.txt; then
+            echo "COPR already enabled: $copr"
+            continue
+        fi
+
+        if [[ "$DRY_RUN" == true ]]; then
+            echo "Would enable COPR: $copr"
+        else
+            echo "Enabling COPR: $copr"
+            sudo dnf copr enable -y "$copr"
+        fi
+
+    done < "$copr_file"
+
+    echo
+    echo "COPR check complete."
+    echo
+}
+
 # -----------------------------
 # Check if a package is installed
 # -----------------------------
@@ -113,6 +150,13 @@ install_pkg() {
             ;;
     esac
 }
+
+# -----------------------------
+# If using DNF, enable COPR repos first
+# -----------------------------
+if [[ "$PACKAGE_MANAGER" == "dnf" ]]; then
+    enable_coprs_if_needed
+fi
 
 # -----------------------------
 # Main processing loop
