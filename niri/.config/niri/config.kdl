@@ -72,7 +72,8 @@ input {
 }
 
 // Wallpaper
-spawn-at-startup "swaybg" "-o *" "-i ~/.config/backgrounds/lofiwallpaper.png"
+// dank material shell settings has this
+// spawn-at-startup "swaybg" "-i ~/.config/backgrounds/lofiwallpaper.png"
 
 // You can configure outputs by their name, which you can find
 // by running `niri msg outputs` while inside a niri instance.
@@ -277,7 +278,8 @@ layout {
 // See the binds section below for more spawn examples.
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
-spawn-at-startup "waybar"
+// no need of this since DankMaterialShell has a bar
+// spawn-at-startup "waybar"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
@@ -385,9 +387,13 @@ binds {
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
-    Mod+space hotkey-overlay-title="Run an Application: wofi" { spawn "~/.config/niri/scripts/wofi-toggle.sh"; }
+    // Mod+space hotkey-overlay-title="Run an Application: wofi" { spawn "~/.config/niri/scripts/wofi-toggle.sh"; }
+    Mod+space hotkey-overlay-title="Run an Application: dms launcher" {
+       spawn "dms" "ipc" "call" "spotlight" "toggle";
+    }
     Ctrl+Alt+Q hotkey-overlay-title="Lock the Screen: swaylock" {
-      spawn "swaylock" "-i" "~/.config/backgrounds/nice-blue-background.png";
+      // spawn "swaylock" "-i" "~/.config/backgrounds/nice-blue-background.png";
+      spawn "dms" "ipc" "call" "lock" "lock"; 
    }
     // Super+Alt+L hotkey-overlay-title="Lock the Screen: gtklock" { spawn "gtklock"; }
 
@@ -663,5 +669,10 @@ binds {
    Ctrl+Alt+R hotkey-overlay-title="Reboot system" {
       spawn "reboot"
    }
+
+
+    Mod+N hotkey-overlay-title="Notification Center" {
+        spawn "dms" "ipc" "call" "notifications" "toggle"; 
+    }
 }
 

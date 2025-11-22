@@ -1940,6 +1940,7 @@ rtkit
 rubberband-libs
 rust
 rust-std-static
+rustfmt
 rutabaga-gfx-ffi
 rygel
 samba-client

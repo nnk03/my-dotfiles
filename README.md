@@ -1,6 +1,14 @@
+
 # On fedora
 
 Use `sudo dnf copr enable <repo>?`
+
+```
+sudo dnf copr enable avengemedia/dms                                                                                ─╯
+sudo dnf install niri dms
+systemctl --user add-wants niri.service dms
+
+```
 
 # Man pages
 
