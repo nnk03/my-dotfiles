@@ -1386,6 +1386,7 @@ libyuv
 libzip
 libzmf
 libzstd
+light
 lilv-libs
 linux-atm-libs
 linux-firmware
@@ -1702,6 +1703,7 @@ plymouth-scripts
 plymouth-system-theme
 plymouth-theme-spinner
 podman
+podman-sequoia
 policycoreutils
 policycoreutils-python-utils
 polkit
