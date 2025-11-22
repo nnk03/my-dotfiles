@@ -681,8 +681,12 @@ binds {
    }
 
 
-    Mod+N hotkey-overlay-title="Notification Center" {
-        spawn "dms" "ipc" "call" "notifications" "toggle"; 
+    Mod+Ctrl+N hotkey-overlay-title="Notification Center" {
+        spawn "dms" "ipc" "call" "notifications" "toggle";
+    }
+
+    Mod+N hotkey-overlay-title="Toggle Night Mode" {
+        spawn "~/.config/niri/scripts/night-mode-toggle.sh"
     }
 }
 
