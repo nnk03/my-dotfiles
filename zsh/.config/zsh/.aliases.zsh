@@ -9,7 +9,8 @@ alias godotApp='$HOME/.godotAppRun/Godot_v4.3-stable_linux.x86_64'
 
 # ---- Eza (better ls) -----
 alias els="/usr/bin/ls"
-alias ls="eza --icons=always"
+# alias ls="eza --icons=always"
+alias la="eza --icons=always"
 # alias els="eza --icons=always"
 
 # ---- Zoxide (better cd) ----
