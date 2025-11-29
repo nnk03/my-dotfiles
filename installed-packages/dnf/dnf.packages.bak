@@ -186,6 +186,7 @@ clucene-core
 cmake
 cmake-data
 cmake-filesystem
+cmatrix
 cockpit-bridge
 cockpit-storaged
 cockpit-system
