@@ -106,8 +106,14 @@
   "mediaSize": 1,
   "dankBarLeftWidgets": [
     "launcherButton",
-    "workspaceSwitcher",
-    "focusedWindow"
+    {
+      "id": "workspaceSwitcher",
+      "enabled": true
+    },
+    {
+      "id": "focusedWindow",
+      "enabled": true
+    }
   ],
   "dankBarCenterWidgets": [
     "music",
