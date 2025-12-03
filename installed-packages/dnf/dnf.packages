@@ -1569,6 +1569,7 @@ openssh
 openssh-clients
 openssh-server
 openssl
+openssl-devel
 openssl-libs
 openvpn
 openxr-libs
