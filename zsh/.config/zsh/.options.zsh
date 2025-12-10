@@ -31,6 +31,7 @@ bindkey '^o' clear-screen
 
 export PATH="$HOME/.nvim-linux-x86_64/bin/./:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$PATH:$HOME/go/bin"
 # export PATH="$HOME/.alacritty/target/release:$PATH"
 # alacritty can be installed using sudo apt in ubuntu 24.04
 
