@@ -341,6 +341,7 @@ dnf-plugins-core
 dnf4-plugin-notify-PackageKit
 dnf5
 dnf5-plugins
+dns-root-data
 dnsmasq
 docker-buildx
 docker-cli
@@ -573,7 +574,11 @@ gnupg2-verify
 gnutls
 gnutls-dane
 gnutls-utils
+go-filesystem
 gobject-introspection
+golang
+golang-bin
+golang-src
 google-carlito-fonts
 google-chrome-stable
 google-crosextra-caladea-fonts
@@ -841,10 +846,15 @@ kde-filesystem
 kdump-anaconda-addon
 kdump-utils
 kernel
+kernel
+kernel-core
 kernel-core
 kernel-headers
 kernel-modules
+kernel-modules
 kernel-modules-core
+kernel-modules-core
+kernel-modules-extra
 kernel-modules-extra
 kernel-tools
 kernel-tools-libs
@@ -1247,6 +1257,7 @@ libselinux-utils
 libsemanage
 libsepol
 libsepol-devel
+libserf
 libshaderc
 libshout
 libshumate
@@ -1448,6 +1459,7 @@ mdadm
 mdevctl
 mediawriter
 memstrack
+mercurial
 mesa-dri-drivers
 mesa-filesystem
 mesa-libEGL
@@ -2084,6 +2096,8 @@ stix-fonts
 stoken-libs
 stow
 strace
+subversion
+subversion-libs
 sudo
 sudo-python-plugin
 sushi
@@ -2207,6 +2221,7 @@ wavpack
 waybar-git
 wayland-devel
 wayland-protocols-devel
+wcurl
 web-assets-filesystem
 webkit2gtk4
 webkitgtk6
