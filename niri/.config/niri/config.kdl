@@ -341,7 +341,6 @@ window-rule {
    match app-id="ghostty"
    match app-id="google-chrome"
    match app-id="Google-chrome"
-   match app-id="virt-manager"
    open-maximized true
 }
 
