@@ -159,6 +159,9 @@ cairo-devel
 cairo-gobject
 cairomm
 cairomm1
+calc
+calc-libs
+calc-stdrc
 calibre
 capstone
 cargo
