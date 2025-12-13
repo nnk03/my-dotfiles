@@ -31,6 +31,7 @@ PackageKit-gstreamer-plugin
 PackageKit-gtk3-module
 SDL2_image
 SDL3
+ShellCheck
 SwayNotificationCenter
 SwayNotificationCenter-bash-completion
 SwayNotificationCenter-zsh-completion
