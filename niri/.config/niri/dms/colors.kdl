@@ -28,7 +28,7 @@ layout {
     }
 }
 
-/-recent-windows {
+recent-windows {
     highlight {
         active-color   "#723522"
         urgent-color   "#ffb4ab"
