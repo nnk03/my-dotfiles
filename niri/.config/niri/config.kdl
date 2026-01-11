@@ -672,6 +672,11 @@ binds {
        // spawn "google-chrome-stable" "--new-window" "--incognito" "--ozone-platform=wayland";
    }
 
+   Mod+Shift+G hotkey-overlay-title="Open Firefox" {
+      spawn "firefox" "-P"
+       // spawn "google-chrome-stable" "--new-window" "--ozone-platform=wayland";
+   }
+
    Mod+Ctrl+F hotkey-overlay-title="Open Nautilus File Manager" {
       spawn "nautilus" "--new-window"
    }
