@@ -792,6 +792,7 @@ iio-sensor-proxy
 ilbc
 ima-evm-utils-libs
 imath
+info
 inih
 inih-cpp
 iniparser
@@ -1190,6 +1191,7 @@ libpath_utils
 libpcap
 libpciaccess
 libpciaccess-devel
+libpfm
 libphodav
 libphonenumber
 libpinyin

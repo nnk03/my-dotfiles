@@ -826,6 +826,7 @@ iwlwifi-mld-firmware
 iwlwifi-mvm-firmware
 jansson
 jasper-libs
+java-25-openjdk-crypto-adapter
 java-25-openjdk-headless
 javapackages-filesystem
 javascriptcoregtk4

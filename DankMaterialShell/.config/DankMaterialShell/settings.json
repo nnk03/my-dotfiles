@@ -117,8 +117,6 @@
   "appLauncherGridColumns": 4,
   "spotlightCloseNiriOverview": true,
   "niriOverviewOverlayEnabled": true,
-  "weatherLocation": "New York, NY",
-  "weatherCoordinates": "40.7128,-74.0060",
   "useAutoLocation": false,
   "weatherEnabled": false,
   "networkPreference": "wifi",
@@ -236,7 +234,9 @@
       "name": "Main Bar",
       "enabled": true,
       "position": 0,
-      "screenPreferences": ["all"],
+      "screenPreferences": [
+        "all"
+      ],
       "showOnLastDisplay": true,
       "leftWidgets": [
         "launcherButton",
@@ -249,7 +249,11 @@
           "enabled": true
         }
       ],
-      "centerWidgets": ["music", "clock", "weather"],
+      "centerWidgets": [
+        "music",
+        "clock",
+        "weather"
+      ],
       "rightWidgets": [
         "systemTray",
         "clipboard",
@@ -282,5 +286,6 @@
       "popupGapsManual": 4
     }
   ],
-  "configVersion": 2
+  "configVersion": 5,
+  "desktopWidgetInstances": []
 }
