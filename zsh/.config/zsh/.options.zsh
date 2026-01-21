@@ -15,6 +15,15 @@ unsetopt share_history
 export EDITOR='vim'
 export VISUAL='vim'
 
+# opencode
+export PATH=/home/neeraj/.opencode/bin:$PATH
+export PATH="$HOME/.local/share/nvim/mason/bin:$PATH"
+
+if command -v nvim > /dev/null ; then
+   export VISUAL=nvim
+   export EDITOR=nvim
+fi
+
 # eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # . "$HOME/.cargo/env"
 

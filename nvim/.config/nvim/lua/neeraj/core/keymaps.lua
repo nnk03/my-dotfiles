@@ -82,6 +82,7 @@ keymap.set("n", "<leader>m", "<Esc>:bp<CR>")
 keymap.set("n", "<leader>bfc", "<Esc>:! clang-format -i % <CR>")
 -- for python
 keymap.set("n", "<leader>bfp", "<Esc>:! black % <CR>")
+-- keymap.set("n", "<leader>bfp", "<Esc>:! ruff % <CR>")
 
 -- compiling
 -- make it specific for C++
