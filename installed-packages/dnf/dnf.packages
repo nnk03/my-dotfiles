@@ -59,6 +59,7 @@ abseil-cpp-testing
 accountsservice
 accountsservice-libs
 acl
+add-determinism
 adobe-mappings-cmap
 adobe-mappings-cmap-deprecated
 adobe-mappings-pdf
@@ -68,6 +69,8 @@ adwaita-icon-theme
 adwaita-icon-theme-legacy
 adwaita-mono-fonts
 adwaita-sans-fonts
+akmod-nvidia
+akmods
 alacritty
 alsa-lib
 alsa-sof-firmware
@@ -81,6 +84,9 @@ anaconda-install-env-deps
 anaconda-live
 anaconda-tui
 anaconda-webui
+annobin-docs
+annobin-plugin-gcc
+ansible-srpm-macros
 anthy-unicode
 antiword
 appstream
@@ -149,6 +155,7 @@ brotli-devel
 btop
 btrfs-progs
 bubblewrap
+build-reproducibility-srpm-macros
 bzip2
 bzip2-devel
 bzip2-libs
@@ -190,6 +197,7 @@ clucene-core
 cmake
 cmake-data
 cmake-filesystem
+cmake-rpm-macros
 cmatrix
 cockpit-bridge
 cockpit-storaged
@@ -252,6 +260,7 @@ dbus-daemon
 dbus-libs
 dbus-tools
 dconf
+debugedit
 decibels
 default-editor
 default-fonts-am
@@ -360,6 +369,7 @@ dracut-network
 dracut-squash
 du-dust
 duktape
+dwz
 e2fsprogs
 e2fsprogs-libs
 ed
@@ -367,12 +377,17 @@ editorconfig-libs
 edk2-ovmf
 edk2-shell-x64
 efi-filesystem
+efi-srpm-macros
 efibootmgr
 efivar-libs
+egl-gbm
+egl-wayland
+egl-x11
 elfutils
 elfutils-debuginfod-client
 elfutils-default-yama-scope
 elfutils-libelf
+elfutils-libelf-devel
 elfutils-libs
 emacs-filesystem
 enchant2
@@ -395,6 +410,8 @@ f2fs-tools
 f43-backgrounds-base
 f43-backgrounds-gnome
 faad2-libs
+fakeroot
+fakeroot-libs
 fastfetch
 fcft
 fd-find
@@ -419,6 +436,7 @@ fftw-libs-single
 file
 file-libs
 filesystem
+filesystem-srpm-macros
 findutils
 firefox
 firefox-langpacks
@@ -439,7 +457,10 @@ fontawesome-6-free-fonts
 fontconfig
 fontconfig-devel
 fonts-filesystem
+fonts-srpm-macros
+forge-srpm-macros
 fpaste
+fpc-srpm-macros
 fprintd
 fprintd-pam
 freeglut
@@ -463,10 +484,12 @@ fwupd-plugin-uefi-capsule-data
 fzf
 game-music-emu
 gamemode
+gap-srpm-macros
 gawk
 gawk-all-langpacks
 gcc
 gcc-c++
+gcc-plugin-annobin
 gcr
 gcr-libs
 gcr3
@@ -487,6 +510,7 @@ gettext
 gettext-envsubst
 gettext-libs
 gettext-runtime
+ghc-srpm-macros
 ghostscript
 ghostscript-tools-fontutils
 ghostscript-tools-printing
@@ -517,6 +541,7 @@ glycin-loaders
 glycin-thumbnailer
 gmock
 gmp
+gnat-srpm-macros
 gnome-abrt
 gnome-app-list
 gnome-autoar
@@ -579,6 +604,7 @@ gnutls
 gnutls-dane
 gnutls-utils
 go-filesystem
+go-srpm-macros
 gobject-introspection
 golang
 golang-bin
@@ -644,6 +670,7 @@ google-noto-serif-vf-fonts
 gperftools-libs
 gpgme
 gpgmepp
+gpgverify
 gpm-libs
 gpsd-libs
 granite
@@ -829,6 +856,7 @@ jansson
 jasper-libs
 java-25-openjdk-crypto-adapter
 java-25-openjdk-headless
+java-srpm-macros
 javapackages-filesystem
 javascriptcoregtk4
 javascriptcoregtk6
@@ -857,6 +885,8 @@ kernel
 kernel-core
 kernel-core
 kernel-core
+kernel-devel
+kernel-devel-matched
 kernel-headers
 kernel-modules
 kernel-modules
@@ -867,6 +897,7 @@ kernel-modules-core
 kernel-modules-extra
 kernel-modules-extra
 kernel-modules-extra
+kernel-srpm-macros
 kernel-tools
 kernel-tools-libs
 kexec-tools
@@ -882,6 +913,8 @@ kitty-shell-integration
 kitty-terminfo
 kmod
 kmod-libs
+kmod-nvidia-6
+kmodtool
 kpartx
 krb5-libs
 kyotocabinet-libs
@@ -1416,6 +1449,7 @@ libyuv
 libzip
 libzmf
 libzstd
+libzstd-devel
 light
 lilv-libs
 linux-atm-libs
@@ -1439,6 +1473,7 @@ lrzsz
 lsof
 lttng-ust
 lua-libs
+lua-srpm-macros
 lua5
 luajit
 luajit2
@@ -1570,12 +1605,17 @@ ntfsprogs
 numactl-libs
 numad
 nvidia-gpu-firmware
+nvidia-modprobe
+nvidia-persistenced
+nvidia-settings
 nvme-cli
 nwg-bar
 nwg-displays
 nwg-look
 nwg-panel
 nxpwireless-firmware
+ocaml-srpm-macros
+ocl-icd
 oniguruma
 onnx-libs
 onnxruntime
@@ -1583,6 +1623,8 @@ open-sans-fonts
 open-vm-tools
 open-vm-tools-desktop
 openal-soft
+openblas-srpm-macros
+opencl-filesystem
 openconnect
 opencore-amr
 openexr-libs
@@ -1612,6 +1654,7 @@ ostree-libs
 p11-kit
 p11-kit-server
 p11-kit-trust
+package-notes-srpm-macros
 paktype-naskh-basic-fonts
 pam
 pam-libs
@@ -1634,6 +1677,7 @@ passt
 passt-selinux
 passwdqc
 passwdqc-utils
+patch
 pavucontrol
 pcaudiolib
 pciutils
@@ -1709,6 +1753,7 @@ perl-overload
 perl-overloading
 perl-parent
 perl-podlators
+perl-srpm-macros
 perl-vars
 pigz
 pinentry
@@ -1771,8 +1816,10 @@ pugixml
 pulseaudio-libs
 pulseaudio-libs-glib2
 pulseaudio-utils
+pyproject-srpm-macros
 python-pip-wheel
 python-pyqt6-rpm-macros
+python-srpm-macros
 python-unversioned-command
 python3
 python3-abrt
@@ -1861,6 +1908,7 @@ python3-pillow
 python3-ply
 python3-policycoreutils
 python3-productmd
+python3-progressbar2
 python3-psutil
 python3-ptyprocess
 python3-pwquality
@@ -1886,6 +1934,8 @@ python3-requests-file
 python3-requests-ftp
 python3-rpds-py
 python3-rpm
+python3-rpmautospec
+python3-rpmautospec-core
 python3-satyr
 python3-setools
 python3-setuptools
@@ -1900,6 +1950,7 @@ python3-typing-extensions
 python3-unbound
 python3-urllib3
 python3-urllib3+socks
+python3-utils
 python3-webencodings
 python3-xkbregistry
 python3-xlib
@@ -1972,6 +2023,7 @@ qt5-qttranslations
 qt5-qtwayland
 qt5-qtx11extras
 qt5-qtxmlpatterns
+qt5-srpm-macros
 qt6-filesystem
 qt6-qtbase
 qt6-qtbase-common
@@ -2002,6 +2054,7 @@ qt6-qtwebchannel
 qt6-qtwebengine
 qt6-qtwebsockets
 qt6-qtwebview
+qt6-srpm-macros
 quickshell
 quota
 quota-nls
@@ -2014,6 +2067,7 @@ readline
 realmd
 realtek-firmware
 redhat-menus
+redhat-rpm-config
 redland
 rest
 resvg
@@ -2025,6 +2079,7 @@ rocm-smi
 rootfiles
 rpcbind
 rpm
+rpm-build
 rpm-build-libs
 rpm-libs
 rpm-plugin-audit
@@ -2032,12 +2087,14 @@ rpm-plugin-selinux
 rpm-plugin-systemd-inhibit
 rpm-sequoia
 rpm-sign-libs
+rpmdevtools
 rsync
 rsyslog
 rtkit
 rubberband-libs
 runc
 rust
+rust-srpm-macros
 rust-std-static
 rustfmt
 rutabaga-gfx-ffi
@@ -2139,6 +2196,7 @@ systemd-networkd
 systemd-oomd-defaults
 systemd-pam
 systemd-resolved
+systemd-rpm-macros
 systemd-shared
 systemd-sysusers
 systemd-udev
@@ -2171,6 +2229,7 @@ tpm2-tss-fapi
 traceroute
 tree
 tree-sitter-cli
+tree-sitter-srpm-macros
 tslib
 tuned
 tuned-ppd
@@ -2299,6 +2358,12 @@ xmlsec1
 xmlsec1-nss
 xmlsec1-openssl
 xmodmap
+xorg-x11-drv-nvidia
+xorg-x11-drv-nvidia-cuda
+xorg-x11-drv-nvidia-cuda-libs
+xorg-x11-drv-nvidia-kmodsrc
+xorg-x11-drv-nvidia-libs
+xorg-x11-drv-nvidia-power
 xorg-x11-proto-devel
 xorg-x11-server-Xwayland
 xorg-x11-server-Xwayland-devel
@@ -2324,6 +2389,7 @@ yyjson
 zchunk-libs
 zenity
 zeromq
+zig-srpm-macros
 zimg
 zip
 zix
