@@ -584,6 +584,7 @@ binds {
     // The following binds move the focused window in and out of a column.
     // If the window is alone, they will consume it into the nearby column to the side.
     // If the window is already in a column, they will expel it out.
+    // example : A | B --> A over B
     Mod+BracketLeft  { consume-or-expel-window-left; }
     Mod+BracketRight { consume-or-expel-window-right; }
 
@@ -621,6 +622,7 @@ binds {
     Mod+Equal { set-column-width "+10%"; }
 
     // Finer height adjustments when in column with other windows.
+    // to use when multiple windows are in a single column ?
     Mod+Shift+Minus { set-window-height "-10%"; }
     Mod+Shift+Equal { set-window-height "+10%"; }
 
