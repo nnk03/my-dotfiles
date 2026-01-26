@@ -31,3 +31,6 @@ alias lo='lazydocker'
 # -b is for old style of display
 # -M is for "week starts on Monday"
 alias ncal='ncal -b -M'
+alias exit_code='echo $?'
+# in bash it is, "${PIPESTATUS[@]}"
+alias pipe_exit_code='echo "${pipestatus[@]}"'
