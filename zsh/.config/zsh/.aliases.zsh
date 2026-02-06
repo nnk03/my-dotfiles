@@ -34,3 +34,9 @@ alias ncal='ncal -b -M'
 alias exit_code='echo $?'
 # in bash it is, "${PIPESTATUS[@]}"
 alias pipe_exit_code='echo "${pipestatus[@]}"'
+
+
+# man using `bat` command
+# also can be done by `export MANPAGER="bat -plman"`
+# `bat -plman` same as `bat -p -l man`
+alias bman='MANPAGER="bat -plman" man'
