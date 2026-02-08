@@ -286,6 +286,9 @@ layout {
 // no need of this since DankMaterialShell has a bar
 // spawn-at-startup "waybar"
 
+// start clipboard manager
+spawn-sh-at-startup "wl-paste --type text --watch cliphist store"
+
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
 
@@ -664,6 +667,10 @@ binds {
     // Powers off the monitors. To turn them back on, do any input like
     // moving the mouse or pressing any other key.
     // Mod+Shift+P { power-off-monitors; }
+
+   Mod+Shift+C hotkey-overlay-title="Open Clipboard manager" {
+       spawn-sh "cliphist list | fuzzel --dmenu --with-nth 2 | cliphist decode | wl-copy"
+   }
 
    Mod+Shift+B hotkey-overlay-title="Open Chrome" {
        spawn "google-chrome-stable" "--new-window" "--ozone-platform=x11";
