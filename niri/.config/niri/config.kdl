@@ -113,7 +113,7 @@ input {
 }
 
 // output "HDMI-A-5" {
-//    scale 1
+//    scale 1.5
 // }
 
 // Settings that influence how windows are positioned and sized.

@@ -75,7 +75,7 @@ keymap.set("n", "<leader>w", "<Esc>:w<CR>")
 keymap.set("n", "<leader>q", "<Esc>:q<CR>")
 keymap.set("n", "<leader>n", "<Esc>:bn<CR>")
 keymap.set("n", "<leader>m", "<Esc>:bp<CR>")
--- keymap.set("n", "<leader>d", "<Esc>:bd<CR>")
+keymap.set("n", "<leader>rf", "<Esc>:bufdo e!<CR>")
 
 -- formatters/linters
 -- for c/cpp
