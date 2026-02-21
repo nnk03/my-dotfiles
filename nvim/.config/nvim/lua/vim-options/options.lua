@@ -21,7 +21,7 @@ opt.autoindent = true -- copy indent from current line when starting new one
 opt.smartindent = true
 
 -- line wrapping
-opt.wrap = false -- disable/enable line wrapping
+opt.wrap = true -- disable/enable line wrapping
 
 -- search settings
 opt.ignorecase = true -- ignore case when searching
@@ -50,3 +50,5 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 opt.swapfile = false
+
+opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
