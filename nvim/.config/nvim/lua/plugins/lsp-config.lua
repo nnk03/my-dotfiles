@@ -41,6 +41,12 @@ return {
 			local cmp_nvim_lsp = require("cmp_nvim_lsp")
 			local capabilities = cmp_nvim_lsp.default_capabilities()
 
+			-- Optional: set highlight groups if you want custom colors
+			vim.api.nvim_set_hl(0, "DiagnosticSignError", { fg = "#FF0000" }) -- Customize color as needed
+			vim.api.nvim_set_hl(0, "DiagnosticSignWarn", { fg = "#FFA500" })
+			vim.api.nvim_set_hl(0, "DiagnosticSignHint", { fg = "#00BFFF" })
+			vim.api.nvim_set_hl(0, "DiagnosticSignInfo", { fg = "#00FF00" })
+
 			local keymap = vim.keymap -- for conciseness
 			local opts = { noremap = true, silent = true }
 			local on_attach = function(client, bufnr)
@@ -140,7 +146,7 @@ return {
 			})
 			lspconfig_enable("clangd")
 
-         -- for python
+			-- for python
 			lspconfig("pyright", {
 				capabilities = capabilities,
 				on_attach = on_attach,

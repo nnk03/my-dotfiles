@@ -25,3 +25,8 @@ vim.api.nvim_create_autocmd("FileType", {
 		require("render-markdown").enable()
 	end,
 })
+
+vim.api.nvim_create_autocmd("BufWritePost", {
+	pattern = { "*.rs" },
+	command = "silent ! rustfmt %",
+})
