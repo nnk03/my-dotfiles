@@ -1,22 +1,26 @@
--- enables undofile
-vim.o.undofile = true
-
 -- set mapleader before loading lazy
 vim.g.mapleader = " "
 
--- contains the keymaps and options
-require("neeraj.core")
+-- Bootstrap lazy.nvim
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not (vim.uv or vim.loop).fs_stat(lazypath) then
+  local lazyrepo = "https://github.com/folke/lazy.nvim.git"
+  local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
+  if vim.v.shell_error ~= 0 then
+    vim.api.nvim_echo({
+      { "Failed to clone lazy.nvim:\n", "ErrorMsg" },
+      { out, "WarningMsg" },
+      { "\nPress any key to exit..." },
+    }, true, {})
+    vim.fn.getchar()
+    os.exit(1)
+  end
+end
+vim.opt.rtp:prepend(lazypath)
 
--- contains plugins, lsp
-require("neeraj.lazy")
+-- vim options
+require( 'vim-options' )
+-- Setup lazy.nvim
+require("lazy").setup( "plugins" )
 
---
--- local plugins = {}
--- local opts = {}
-
-require("neeraj.autocmd")
-
-vim.opt.foldmethod = "expr"
-vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
-vim.opt.foldenable = false -- Start with all folds open
-vim.opt.foldlevel = 99 -- Don't auto-close any folds
+require( 'autocmd' )
