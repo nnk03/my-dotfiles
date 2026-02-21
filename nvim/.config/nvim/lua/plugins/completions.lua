@@ -1,4 +1,9 @@
 return {
+   -- the below repo is not available ?
+	-- { "amarakon/nvim-cmp-lua-latex-symbols" },
+   { "kdheepak/cmp-latex-symbols" },
+   -- not adding the below plugin explicity does not trigger path completions
+	{ "hrsh7th/cmp-path" },
 	{
 		"hrsh7th/cmp-nvim-lsp",
 	},
@@ -19,7 +24,8 @@ return {
 			"saadparwaiz1/cmp_luasnip", -- for autocompletion
 			"rafamadriz/friendly-snippets", -- useful snippets
 			"onsails/lspkind.nvim", -- vs-code like pictograms
-			"amarakon/nvim-cmp-lua-latex-symbols",
+			-- "amarakon/nvim-cmp-lua-latex-symbols", -- repo not available anymore ?
+         "kdheepak/cmp-latex-symbols",
 		},
 
 		config = function()
@@ -41,7 +47,7 @@ return {
 						luasnip.lsp_expand(args.body) -- For `luasnip` users.
 					end,
 				},
-            -- for some reason the below not working ?
+				-- for some reason the below not working ?
 				-- window = {
 				-- 	completion = cmp.config.window.bordered(),
 				-- 	documentation = cmp.config.window.bordered(),
@@ -64,6 +70,7 @@ return {
 					["<C-Space>"] = cmp.mapping.complete(),
 					["<C-e>"] = cmp.mapping.abort(),
 					["<CR>"] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+					-- ["<CR>"] = cmp.mapping.confirm({ select = false }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
 					-- jump to next params in autocompletion
 					["<Tab>"] = cmp.mapping(function(fallback)
 						if cmp.visible() then
@@ -89,9 +96,11 @@ return {
 				sources = cmp.config.sources({
 					{ name = "nvim_lsp" },
 					{ name = "luasnip" }, -- snippets
-					{ name = "buffer" }, -- text within current buffer
 					{ name = "path" }, -- file system paths
-					{ name = "lua-latex-symbols", option = { cache = true } },
+					-- { name = "lua-latex-symbols", option = { cache = true } },
+					{ name = "latex_symbols" },
+				}, {
+					{ name = "buffer" }, -- text within current buffer
 				}),
 				-- configure lspkind for vs-code like pictograms in completion menu
 				formatting = {
