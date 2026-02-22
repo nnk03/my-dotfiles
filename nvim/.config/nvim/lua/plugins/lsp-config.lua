@@ -49,7 +49,7 @@ return {
 
 			local keymap = vim.keymap -- for conciseness
 			local opts = { noremap = true, silent = true }
-			local on_attach = function(client, bufnr)
+			local custom_on_attach = function(client, bufnr)
 				opts.buffer = bufnr
 
 				-- set keybinds
@@ -103,7 +103,7 @@ return {
 			lspconfig("lua_ls", {
 				capabilities = capabilities,
 				on_attach = function(client, bufnr)
-					on_attach(client, bufnr)
+					custom_on_attach(client, bufnr)
 					client.server_capabilities.semanticTokensProvider = nil
 				end,
 				settings = {
@@ -120,8 +120,8 @@ return {
 			lspconfig("rust_analyzer", {
 				capabilities = capabilities,
 				on_attach = function(client, bufnr)
-					on_attach(client, bufnr)
-					client.server_capabilities.semanticTokensProvider = nil
+					custom_on_attach(client, bufnr)
+					-- client.server_capabilities.semanticTokensProvider = nil
 				end,
 				settings = {
 					["rust-analyzer"] = {
@@ -140,8 +140,8 @@ return {
 			lspconfig("clangd", {
 				capabilities = capabilities,
 				on_attach = function(client, bufnr)
-					on_attach(client, bufnr)
-					client.server_capabilities.semanticTokensProvider = nil
+					custom_on_attach(client, bufnr)
+					-- client.server_capabilities.semanticTokensProvider = nil
 				end,
 			})
 			lspconfig_enable("clangd")
@@ -149,7 +149,7 @@ return {
 			-- for python
 			lspconfig("pyright", {
 				capabilities = capabilities,
-				on_attach = on_attach,
+				on_attach = custom_on_attach,
 			})
 			lspconfig_enable("pyright")
 		end,
