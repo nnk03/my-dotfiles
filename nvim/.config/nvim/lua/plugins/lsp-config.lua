@@ -1,3 +1,11 @@
+LanguageServers = {
+	-- if the below list is changed, also check the relevant parts under 'nvim-lspconfig' plugin
+	"lua_ls",
+	"rust_analyzer",
+	"clangd",
+	"ts_ls",
+	"bashls",
+}
 return {
 	{
 		"mason-org/mason.nvim",
@@ -14,13 +22,7 @@ return {
 		config = function()
 			require("mason-lspconfig").setup({
 				-- after adding something here, make sure to go to nvim-lspconfig and add the necessary options
-				ensure_installed = {
-					-- if the below list is changed, also check the relevant parts under 'nvim-lspconfig' plugin
-					"lua_ls",
-					"rust_analyzer",
-					"clangd",
-					"ts_ls",
-				},
+				ensure_installed = LanguageServers,
 				ui = {
 					icons = {
 						package_installed = "✓",
@@ -135,23 +137,27 @@ return {
 				},
 			})
 			lspconfig_enable("rust_analyzer")
+			for _, languageServer in ipairs(LanguageServers) do
+				if languageServer ~= "rust_analyzer" then
+					lspconfig(languageServer, {
+						capabilities = capabilities,
+						on_attach = function(client, bufnr)
+							custom_on_attach(client, bufnr)
+						end,
+					})
+					lspconfig_enable(languageServer)
+				end
+			end
 
-			-- for c/c++
-			lspconfig("clangd", {
-				capabilities = capabilities,
-				on_attach = function(client, bufnr)
-					custom_on_attach(client, bufnr)
-					-- client.server_capabilities.semanticTokensProvider = nil
-				end,
-			})
-			lspconfig_enable("clangd")
-
-			-- for python
-			lspconfig("pyright", {
-				capabilities = capabilities,
-				on_attach = custom_on_attach,
-			})
-			lspconfig_enable("pyright")
+			-- -- -- for c/c++
+			-- lspconfig("clangd", {
+			-- 	capabilities = capabilities,
+			-- 	on_attach = function(client, bufnr)
+			-- 		custom_on_attach(client, bufnr)
+			-- 		-- client.server_capabilities.semanticTokensProvider = nil
+			-- 	end,
+			-- })
+			-- lspconfig_enable("clangd")
 		end,
 	},
 }
