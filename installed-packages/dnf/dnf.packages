@@ -175,6 +175,7 @@ cargo
 catatonit
 cava
 cdparanoia-libs
+cef
 checkpolicy
 chmlib
 chrony
@@ -611,6 +612,7 @@ golang-bin
 golang-src
 google-carlito-fonts
 google-chrome-stable
+google-crc32c
 google-crosextra-caladea-fonts
 google-droid-sans-fonts
 google-noto-color-emoji-fonts
@@ -1044,6 +1046,7 @@ libcue
 libcupsfilters
 libcurl
 libdaemon
+libdatachannel
 libdatrie
 libdatrie-devel
 libdav1d
@@ -1058,6 +1061,7 @@ libdisplay-info-devel
 libdnf
 libdnf5
 libdnf5-cli
+libdnf5-plugin-expired-pgp-keys
 libdnf5-plugin-notify-PackageKit
 libdovi
 libdrm
@@ -1246,11 +1250,13 @@ libportal-gtk4
 libpostproc-free
 libppd
 libproxy
+libproxy-bin
 libpskc
 libpsl
 libpwquality
 libqmi
 libqmi-utils
+libqrcodegencpp
 libqrtr-glib
 libqxp
 librabbitmq
@@ -1476,6 +1482,7 @@ lpsolve
 lrzsz
 lsof
 lttng-ust
+lua
 lua-libs
 lua-srpm-macros
 lua5
@@ -1509,6 +1516,7 @@ mariadb-connector-c-config
 mathjax3
 matugen
 mbedtls
+mbedtls-devel
 mcelog
 mdadm
 mdevctl
@@ -1618,6 +1626,13 @@ nwg-displays
 nwg-look
 nwg-panel
 nxpwireless-firmware
+obs-studio
+obs-studio-libs
+obs-studio-plugin-browser
+obs-studio-plugin-droidcam
+obs-studio-plugin-pwvideo
+obs-studio-plugin-vlc-video
+obs-studio-plugin-webkitgtk
 ocaml-srpm-macros
 ocl-icd
 oniguruma
@@ -1950,6 +1965,7 @@ python3-sniffio
 python3-soupsieve
 python3-speechd
 python3-systemd
+python3-tkinter
 python3-typing-extensions
 python3-unbound
 python3-urllib3
@@ -2079,6 +2095,7 @@ rhash
 ripgrep
 rit-meera-new-fonts
 rit-rachana-fonts
+rnnoise
 rocm-smi
 rootfiles
 rpcbind
@@ -2152,6 +2169,7 @@ speech-dispatcher-espeak-ng
 speech-dispatcher-libs
 speech-dispatcher-utils
 speex
+speexdsp
 spice-glib
 spice-gtk3
 spice-server
@@ -2217,10 +2235,12 @@ tesseract-tessdata-doc
 texlive-lib
 thermald
 thrift
+tig
 time
 tini-static
 tinysparql
 tiwilink-firmware
+tk
 tmux
 tomlplusplus
 tomlplusplus-devel
@@ -2237,6 +2257,7 @@ tree-sitter-srpm-macros
 tslib
 tuned
 tuned-ppd
+turbojpeg
 twolame-libs
 tzdata
 tzdata-java
@@ -2275,6 +2296,7 @@ usbredir
 usbutils
 usermode
 userspace-rcu
+usrsctp
 utf8proc
 util-linux
 util-linux-core
@@ -2292,6 +2314,7 @@ virt-manager-common
 virt-what
 virtiofsd
 virtualbox-guest-additions
+vlc-libs
 vo-amrwbenc
 volume_key-libs
 vpnc
