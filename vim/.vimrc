@@ -1,4 +1,4 @@
-set undofile
+" set undofile
 set ts=4
 set rnu
 set nu
