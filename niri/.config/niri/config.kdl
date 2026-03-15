@@ -348,6 +348,11 @@ window-rule {
    open-maximized true
 }
 
+window-rule {
+   match title="^gf2$"
+   open-maximized true
+}
+
 // window-rule {
 //    match app-id=".{0, 100}[nN]autilus"
 //    open-floating true
