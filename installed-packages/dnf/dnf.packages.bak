@@ -2301,6 +2301,10 @@ utf8proc
 util-linux
 util-linux-core
 uwsm
+valgrind
+valgrind-docs
+valgrind-gdb
+valgrind-scripts
 vazirmatn-vf-fonts
 vid
 vim-common
