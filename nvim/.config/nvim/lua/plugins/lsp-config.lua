@@ -51,7 +51,7 @@ return {
 
 			local keymap = vim.keymap -- for conciseness
 			local opts = { noremap = true, silent = true }
-			local custom_on_attach = function(client, bufnr)
+			local custom_on_attach = function(_, bufnr)
 				opts.buffer = bufnr
 
 				-- set keybinds
@@ -130,7 +130,7 @@ return {
 						cargo = {
 							allFeatures = true,
 						},
-                  checkOnSave = true,
+						checkOnSave = true,
 						check = {
 							command = "clippy",
 						},
