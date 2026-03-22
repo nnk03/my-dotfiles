@@ -1,0 +1,29 @@
+# Ignore all by default to stay clean
+*
+
+# Allow essential configuration files
+!.gitignore
+!gui.json
+!global.py
+!dynamic.py
+!custom_recipes/
+
+# Optional: Allow plugins if you want them synced across machines
+# !plugins/
+
+# --- Ignore Everything Else ---
+
+# Ignore heavy binary/database files
+metadata_db_prefs_backup.json
+*.db
+*.pyc
+
+# Ignore volatile session and history data
+history.json
+viewer/
+viewer-web-engine-cache/
+caches/
+tmp/
+
+# Ignore thumbnails and covers
+covers/
