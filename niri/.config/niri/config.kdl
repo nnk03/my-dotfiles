@@ -75,6 +75,11 @@ input {
 // dank material shell settings has this
 // spawn-at-startup "swaybg" "-i ~/.config/backgrounds/lofiwallpaper.png"
 
+// to set default browser
+// spawn-at-startup "~/.config/niri/scripts/set-default-browser.sh"
+// To verify, use `xdg-settings get default-web-browser`
+
+
 // You can configure outputs by their name, which you can find
 // by running `niri msg outputs` while inside a niri instance.
 // The built-in laptop monitor is usually called "eDP-1".
