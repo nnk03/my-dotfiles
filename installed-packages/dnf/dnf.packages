@@ -2082,6 +2082,8 @@ quota-nls
 raptor2
 rasqal
 rav1e-libs
+rclone
+rclone-browser
 re2
 re2-devel
 readline

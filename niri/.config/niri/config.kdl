@@ -350,6 +350,7 @@ window-rule {
    match app-id="google-chrome"
    match app-id="Google-chrome"
    match app-id="firefox"
+   match app-id="rclone-browser"
    open-maximized true
 }
 
