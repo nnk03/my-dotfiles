@@ -80,3 +80,47 @@ keymap.set(
 	"<cmd>bp<bar>sp<bar>bn<bar>bd<CR>",
 	{ desc = "Remove current file from buffer without closing window " }
 )
+
+-- haskell specific keymaps
+local function open_ghci_split()
+	-- -- 1. Save the current file
+	-- vim.cmd("silent write")
+
+	-- 2. Get the current file path
+	local file = vim.fn.expand("%:p")
+
+	-- 3. Define the tmux commands
+	-- '-h 15' sets the height to 15 lines
+	-- 'ghci %s' runs ghci with the current file
+	local tmux_cmd = string.format("tmux split-window -v -l 15 'ghci %s'", file)
+
+	-- 4. Execute in system shell
+	os.execute(tmux_cmd)
+end
+
+vim.keymap.set("n", "<leader>gh", open_ghci_split, { desc = "Run GHCI in tmux split" })
+
+local function send_to_ghci()
+	-- 1. Save the file
+	vim.cmd("silent write")
+
+	local file_path = vim.fn.expand("%:p")
+
+	-- 2. Try to send ':r' to the bottom pane.
+	-- If no bottom pane exists, tmux returns a non-zero exit code.
+	local reload_cmd = "tmux send-keys -t {bottom} ':r' C-m"
+	local success = os.execute(reload_cmd)
+
+	-- 3. If the reload failed (success is nil or not 0), the pane doesn't exist
+	if not success then
+		-- Create the split:
+		-- -v: vertical, -l 15: lines, -d: don't move cursor
+		local create_cmd = string.format("tmux split-window -v -l 15 -d 'ghci %s'", file_path)
+		vim.fn.system(create_cmd)
+		print("GHCI started")
+	else
+		print("GHCI reloaded")
+	end
+end
+
+vim.keymap.set("n", "<leader>gr", send_to_ghci, { desc = "Reload GHCI in tmux" })

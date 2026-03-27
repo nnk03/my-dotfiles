@@ -94,4 +94,6 @@ function y() {
 
 setopt HIST_IGNORE_SPACE
 
+[ -f "/home/neeraj/.ghcup/env" ] && . "/home/neeraj/.ghcup/env" # ghcup-env
+
 # source /usr/share/nvm/init-nvm.sh
