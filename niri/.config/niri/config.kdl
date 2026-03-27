@@ -351,6 +351,7 @@ window-rule {
    match app-id="Google-chrome"
    match app-id="firefox"
    match app-id="rclone-browser"
+   match app-id="calibre-gui"
    open-maximized true
 }
 
@@ -696,6 +697,10 @@ binds {
    Mod+Shift+G hotkey-overlay-title="Open Firefox" {
       spawn "firefox" "-P"
        // spawn "google-chrome-stable" "--new-window" "--ozone-platform=wayland";
+   }
+
+   Mod+Ctrl+E hotkey-overlay-title="Open Calibre e-book manager" {
+      spawn "calibre"
    }
 
    Mod+Ctrl+F hotkey-overlay-title="Open Nautilus File Manager" {
