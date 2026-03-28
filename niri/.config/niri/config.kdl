@@ -352,6 +352,7 @@ window-rule {
    match app-id="firefox"
    match app-id="rclone-browser"
    match app-id="calibre-gui"
+   match app-id="org.gnome.Papers"
    open-maximized true
 }
 
