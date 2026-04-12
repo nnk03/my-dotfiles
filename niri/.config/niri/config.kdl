@@ -47,8 +47,9 @@ input {
     mouse {
         // off
         // natural-scroll
+        // accel-speed 0.5
+        accel-profile "flat" // disable mouse acceleration for gaming ?
         accel-speed 0.5
-        // accel-profile "flat"
         // scroll-method "no-scroll"
     }
 
@@ -353,6 +354,7 @@ window-rule {
    match app-id="rclone-browser"
    match app-id="calibre-gui"
    match app-id="org.gnome.Papers"
+   match app-id="steam"
    open-maximized true
 }
 
