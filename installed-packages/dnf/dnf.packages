@@ -242,6 +242,7 @@ coreutils
 coreutils-common
 cpio
 cpp
+cpptrace
 cpuinfo
 cracklib
 cracklib-dicts
@@ -977,6 +978,7 @@ kmod
 kmod-libs
 kmod-nvidia-6
 kmod-nvidia-6
+kmod-nvidia-6
 kmodtool
 kpartx
 krb5-libs
@@ -1161,6 +1163,7 @@ libdrm-devel
 libdvbpsi
 libdvdnav
 libdvdread
+libdwarf
 libe-book
 libebml
 libebur128

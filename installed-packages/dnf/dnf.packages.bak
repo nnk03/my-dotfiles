@@ -32,7 +32,6 @@ PackageKit-gstreamer-plugin
 PackageKit-gtk3-module
 SDL2_image
 SDL3
-SDL3
 SDL_image
 ShellCheck
 SwayNotificationCenter
@@ -283,7 +282,6 @@ dbus-daemon
 dbus-libs
 dbus-libs
 dbus-tools
-dbus-x11
 dconf
 dconf
 debugedit
@@ -521,8 +519,6 @@ fwupd-plugin-modem-manager
 fwupd-plugin-uefi-capsule-data
 fzf
 game-music-emu
-gamemode
-gamemode
 gap-srpm-macros
 gawk
 gawk-all-langpacks
@@ -629,7 +625,6 @@ gnome-session-wayland-session
 gnome-settings-daemon
 gnome-shell
 gnome-shell-common
-gnome-shell-extension-appindicator
 gnome-shell-extension-apps-menu
 gnome-shell-extension-background-logo
 gnome-shell-extension-common
@@ -778,7 +773,6 @@ gtk-session-lock
 gtk-update-icon-cache
 gtk-vnc2
 gtk2
-gtk2
 gtk3
 gtk3
 gtk4
@@ -885,7 +879,6 @@ ima-evm-utils-libs
 imath
 info
 inih
-inih
 inih-cpp
 iniparser
 initscripts-service
@@ -983,6 +976,7 @@ kitty-terminfo
 kmod
 kmod-libs
 kmod-nvidia-6
+kmod-nvidia-6
 kmodtool
 kpartx
 krb5-libs
@@ -1001,7 +995,6 @@ lcms2
 leptonica
 less
 libICE
-libICE
 libSM
 libX11
 libX11
@@ -1009,7 +1002,6 @@ libX11-common
 libX11-devel
 libX11-xcb
 libX11-xcb
-libXScrnSaver
 libXScrnSaver
 libXau
 libXau
@@ -1058,7 +1050,6 @@ libaio
 libao
 libaom
 libaom
-libappindicator-gtk3
 libarchive
 libargon2
 libaribcaption
@@ -1067,7 +1058,6 @@ libassuan
 libasyncns
 libasyncns
 libatasmart
-libatomic
 libatomic
 libattr
 libavc1394
@@ -1153,7 +1143,6 @@ libdb
 libdbusmenu
 libdbusmenu-gtk3
 libdc1394
-libdecor
 libdecor
 libdeflate
 libdhash
@@ -1346,7 +1335,6 @@ libnl3-cli
 libnma
 libnma-gtk4
 libnotify
-libnsl
 libnsl
 libnsl2
 libnumbertext
@@ -1812,7 +1800,6 @@ ntfs-3g
 ntfs-3g-libs
 ntfs-3g-system-compression
 ntfsprogs
-ntsync-autoload
 numactl-libs
 numad
 nvidia-gpu-firmware
@@ -2521,7 +2508,6 @@ scrub
 sdbus-cpp
 sdl12-compat
 sdl2-compat
-sdl2-compat
 seabios-bin
 seavgabios-bin
 sed
@@ -2581,8 +2567,6 @@ sssd-krb5-common
 sssd-nfs-idmap
 sssd-proxy
 startup-notification
-steam
-steam-devices
 stix-fonts
 stoken-libs
 stow
