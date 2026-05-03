@@ -19,6 +19,8 @@ export VISUAL='vim'
 export PATH=/home/neeraj/.opencode/bin:$PATH
 export PATH="$HOME/.local/share/nvim/mason/bin:$PATH"
 
+# Neovim
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 if command -v nvim > /dev/null ; then
    export VISUAL=nvim
    export EDITOR=nvim
@@ -38,7 +40,7 @@ bindkey '^ ' autosuggest-accept
 bindkey '^o' clear-screen
 
 
-export PATH="$HOME/.nvim-linux-x86_64/bin/./:$PATH"
+# export PATH="$HOME/.nvim-linux-x86_64/bin/./:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$PATH:$HOME/go/bin"
 export PATH="$PATH:$HOME/.local/bin"
