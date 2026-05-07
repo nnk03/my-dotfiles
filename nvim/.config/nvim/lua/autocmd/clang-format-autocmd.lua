@@ -26,3 +26,9 @@ vim.api.nvim_create_user_command("ClangFormatToggle", function()
 end, { desc = "Toggle clang-format for the current buffer" })
 
 
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "c", "cpp" },
+  callback = function()
+    vim.opt_local.cindent = true
+  end,
+})

@@ -291,6 +291,8 @@ layout {
 // This line starts waybar, a commonly used bar for Wayland compositors.
 // no need of this since DankMaterialShell has a bar
 // spawn-at-startup "waybar"
+spawn-at-startup "kitty"
+spawn-at-startup "calibre"
 
 // start clipboard manager
 spawn-sh-at-startup "wl-paste --type text --watch cliphist store"

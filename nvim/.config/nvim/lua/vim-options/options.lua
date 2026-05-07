@@ -18,7 +18,8 @@ opt.softtabstop = 3
 opt.shiftwidth = 3 -- 3 spaces for indent width
 opt.expandtab = true -- expand tab to spaces
 opt.autoindent = true -- copy indent from current line when starting new one
-opt.smartindent = true
+-- opt.smartindent = true
+opt.smartindent = false
 
 -- line wrapping
 opt.wrap = false -- disable/enable line wrapping
