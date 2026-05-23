@@ -547,6 +547,7 @@ gettext
 gettext-envsubst
 gettext-libs
 gettext-runtime
+gh
 ghc-srpm-macros
 ghostscript
 ghostscript-tools-fontutils
