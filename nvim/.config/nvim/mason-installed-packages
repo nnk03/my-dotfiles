@@ -1,0 +1,11 @@
+    ◍ bash-language-server bashls (keywords: bash, csh, ksh, sh, zsh)
+    ◍ haskell-language-server hls (keywords: haskell)
+    ◍ shellcheck (keywords: bash)
+    ◍ shfmt (keywords: bash, mksh, shell)
+    ◍ black (keywords: python)
+    ◍ isort (keywords: python)
+    ◍ clangd (keywords: c, c++)
+    ◍ lua-language-server lua_ls (keywords: lua)
+    ◍ rust-analyzer rust_analyzer (keywords: rust)
+
+
