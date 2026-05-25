@@ -228,6 +228,7 @@ colord
 colord-gtk4
 colord-libs
 colord-libs
+compat-lua-libs
 compiler-rt
 composefs
 composefs-libs
@@ -883,6 +884,7 @@ inih
 inih-cpp
 iniparser
 initscripts-service
+inotify-tools
 intel-audio-firmware
 intel-gmmlib
 intel-gpu-firmware
@@ -1295,6 +1297,7 @@ liblouisutdml
 liblouisutdml-utils
 liblqr-1
 libluksmeta
+libluv
 libmad
 libmanette
 libmatroska
@@ -1508,6 +1511,7 @@ libtool-ltdl
 libtool-ltdl
 libtpms
 libtraceevent
+libtree-sitter
 libudfread
 libudisks2
 libunibreak
@@ -1574,6 +1578,7 @@ libvorbis
 libvorbis
 libvpl
 libvpx
+libvterm
 libwacom
 libwacom-data
 libwayland-client
@@ -1653,7 +1658,9 @@ lttng-ust
 lua
 lua-libs
 lua-srpm-macros
+lua5
 luajit
+luajit2
 luksmeta
 lvm2
 lvm2-dbusd
@@ -1757,6 +1764,7 @@ ncurses-libs
 ncurses-libs
 ndctl
 ndctl-libs
+neovim
 net-snmp-libs
 net-tools
 netavark
@@ -2630,6 +2638,7 @@ tpm2-tss
 tpm2-tss-fapi
 traceroute
 tree
+tree-sitter-cli
 tree-sitter-srpm-macros
 tslib
 tuned
@@ -2646,6 +2655,7 @@ udisks2-iscsi
 udisks2-lvm2
 unbound-anchor
 unbound-libs
+unibilium
 unicode-ucd
 unoconv
 unzip
@@ -2797,6 +2807,7 @@ xorg-x11-xinit
 xorriso
 xprop
 xrdb
+xsel
 xset
 xvidcore
 xwayland-satellite
