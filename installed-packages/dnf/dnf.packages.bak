@@ -979,7 +979,7 @@ kmod
 kmod-libs
 kmod-nvidia-6
 kmod-nvidia-6
-kmod-nvidia-6
+kmod-nvidia-7
 kmodtool
 kpartx
 krb5-libs
@@ -997,6 +997,7 @@ lcms2
 lcms2
 leptonica
 less
+less-color
 libICE
 libSM
 libX11
@@ -2563,6 +2564,7 @@ sratom
 srt-libs
 sscg
 sshpass
+sso-mib-libs
 sssd-client
 sssd-common
 sssd-kcm
