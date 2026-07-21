@@ -216,6 +216,7 @@ cmake
 cmake-data
 cmake-filesystem
 cmake-rpm-macros
+cmake-srpm-macros
 cmatrix
 cockpit-bridge
 cockpit-storaged
@@ -635,6 +636,7 @@ gnome-shell-extension-places-menu
 gnome-shell-extension-window-list
 gnome-software
 gnome-software-fedora-langpacks
+gnome-srpm-macros
 gnome-system-monitor
 gnome-text-editor
 gnome-tour
@@ -977,7 +979,7 @@ kitty-shell-integration
 kitty-terminfo
 kmod
 kmod-libs
-kmod-nvidia-6
+kmod-nvidia-7
 kmod-nvidia-7
 kmod-nvidia-7
 kmodtool
@@ -2630,6 +2632,7 @@ tinysparql
 tiwilink-firmware
 tk
 tmux
+tmux-sesh
 tomlplusplus
 tomlplusplus-devel
 toolbox

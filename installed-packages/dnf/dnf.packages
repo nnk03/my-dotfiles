@@ -2343,6 +2343,7 @@ python3-speechd
 python3-systemd
 python3-tkinter
 python3-typing-extensions
+python3-tzlocal
 python3-unbound
 python3-urllib3
 python3-urllib3+socks
