@@ -758,5 +758,3 @@ layer-rule {
 //    match namespace="kitty"
 //    opacity 0.9
 // }
-
-include "dms/outputs.kdl"
