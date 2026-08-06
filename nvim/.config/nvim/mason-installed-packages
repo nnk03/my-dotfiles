@@ -9,3 +9,20 @@
     ◍ pyright
     ◍ shellcheck
     ◍ shfmt
+    ◍ tex
+
+
+
+    ◍ bash-language-server bashls
+    ◍ black
+    ◍ clangd
+    ◍ haskell-language-server hls
+    ◍ isort
+    ◍ lua-language-server lua_ls
+    ◍ pyright
+    ◍ rust-analyzer rust_analyzer
+    ◍ shellcheck
+    ◍ shfmt
+    ◍ texlab
+    ◍ typescript-language-server ts_ls
+
