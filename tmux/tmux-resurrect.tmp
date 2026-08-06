@@ -1,6 +1,4 @@
-tmux new -ds dotfiles -c ~/my-dotfiles
 tmux new -ds updates -c ~/
-tmux new -ds speed-test-terminal -c ~/dev/speed-test-terminal
 tmux new -ds open-source -c ~/dev/open-source/
 tmux new -ds cf -c ~/cp-template
 tmux new -ds user-directories -c ~/my-directories
@@ -14,3 +12,5 @@ tmux new -ds c-programs -c ~/dev/interesting-c-programs
 tmux new -ds calibre-auto-backup -c ./calibre-auto-backup
 tmux new -ds haskell -c ~/dev/haskell-learning
 tmux new -ds rclone -c ~/gdrive-rclone/
+tmux new -ds iit-madras-courses -c ~/iit-madras-course-related
+tmux new -ds iit-madras-ta -c ~/iit-madras-course-related
