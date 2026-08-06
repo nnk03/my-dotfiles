@@ -981,7 +981,6 @@ kmod
 kmod-libs
 kmod-nvidia-7
 kmod-nvidia-7
-kmod-nvidia-7
 kmodtool
 kpartx
 krb5-libs
@@ -1517,6 +1516,7 @@ libtraceevent
 libtree-sitter
 libudfread
 libudisks2
+libultrahdr
 libunibreak
 libunistring
 libunistring
