@@ -295,7 +295,7 @@ spawn-at-startup "kitty"
 spawn-at-startup "calibre"
 
 // start clipboard manager
-spawn-sh-at-startup "wl-paste --type text --watch cliphist store"
+spawn-sh-at-startup "cliphist wipe && wl-paste --type text --watch cliphist store"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
