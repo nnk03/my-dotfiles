@@ -1,9 +1,11 @@
 return {
    "lervag/vimtex",
-   lazy = false, -- we don't want to lazy load VimTeX
-   -- tag = "v2.15", -- uncomment to pin to a specific release
+   lazy = false,
    init = function()
-      -- VimTeX configuration goes here, e.g.
+      -- Disable VimTeX's version check to bypass the v0.11 false positive
+      vim.g.vimtex_version_check = 0
+
+      -- PDF viewer setup for Wayland / Niri
       vim.g.vimtex_view_method = "zathura"
-   end
+   end,
 }
