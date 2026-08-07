@@ -2,7 +2,7 @@ POWERLEVEL10K_RIGHT_PROMPT_ELEMENTS=(status virtualenv)
 
 plugins=(
     git 
-    zsh-autosuggestions 
+    # zsh-autosuggestions 
     zsh-syntax-highlighting 
     web-search
     virtualenv
