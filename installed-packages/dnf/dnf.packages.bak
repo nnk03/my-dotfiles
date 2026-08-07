@@ -981,6 +981,7 @@ kmod
 kmod-libs
 kmod-nvidia-7
 kmod-nvidia-7
+kmod-nvidia-7
 kmodtool
 kpartx
 krb5-libs
