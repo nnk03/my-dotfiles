@@ -36,7 +36,7 @@ fi
 # export QT_QPA_PLATFORM=wayland
 # export SDL_VIDEODRIVER=wayland
 
-bindkey '^ ' autosuggest-accept
+# bindkey '^ ' autosuggest-accept
 bindkey '^o' clear-screen
 
 

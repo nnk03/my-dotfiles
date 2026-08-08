@@ -62,11 +62,16 @@ download = [
 	{ run = "ya emit download --open %S", desc = "Download and open" },
 	{ run = "ya emit download %S",        desc = "Download" },
 ]
+pdf = [
+	{ run = 'zathura "$@"', desc = "Zathura", orphan = true, for = "unix" },
+]
 
 [open]
 rules = [
 	# Folder
 	{ url = "*/", use = [ "edit", "open", "reveal" ] },
+	# PDF
+	{ mime = "application/pdf", use = [ "pdf", "reveal" ] },
 	# Text
 	{ mime = "text/*", use = [ "edit", "reveal" ] },
 	# Image
