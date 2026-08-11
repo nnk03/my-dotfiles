@@ -899,7 +899,6 @@ ibus-m17n
 ibus-panel
 ibus-setup
 ibus-typing-booster
-ibus-xinit
 igvm-libs
 iio-sensor-proxy
 ilbc
@@ -1855,15 +1854,12 @@ nvidia-modprobe
 nvidia-persistenced
 nvidia-settings
 nvme-cli
-nwg-bar
 nwg-displays
 nwg-look
-nwg-panel
 nxpwireless-firmware
 obs-studio
 obs-studio-libs
 obs-studio-plugin-browser
-obs-studio-plugin-droidcam
 obs-studio-plugin-pwvideo
 obs-studio-plugin-vlc-video
 obs-studio-plugin-webkitgtk
@@ -2418,7 +2414,6 @@ python3-anyio
 python3-appdirs
 python3-apsw
 python3-argcomplete
-python3-attrs
 python3-audit
 python3-augeas
 python3-beautifulsoup4
@@ -2468,8 +2463,6 @@ python3-inkex
 python3-inotify
 python3-iso639
 python3-jeepney
-python3-jsonschema
-python3-jsonschema-specifications
 python3-kickstart
 python3-langtable
 python3-libcomps
@@ -2530,12 +2523,10 @@ python3-pyyaml
 python3-qt5
 python3-qt5-base
 python3-rapidfuzz
-python3-referencing
 python3-regex
 python3-requests
 python3-requests-file
 python3-requests-ftp
-python3-rpds-py
 python3-rpm
 python3-rpm-generators
 python3-rpm-macros
@@ -2548,7 +2539,6 @@ python3-setuptools
 python3-sgmllib3k
 python3-simpleline
 python3-six
-python3-sniffio
 python3-soupsieve
 python3-speechd
 python3-speg
@@ -7152,7 +7142,6 @@ tree-sitter-srpm-macros
 tslib
 tuned
 tuned-ppd
-turbojpeg
 twolame-libs
 tzdata
 tzdata-java
@@ -7258,7 +7247,6 @@ wireless-regdb
 wireplumber
 wireplumber-libs
 wl-clipboard
-wlr-randr
 woff2
 wofi
 words
