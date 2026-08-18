@@ -90,6 +90,7 @@ input {
 // output "eDP-1" {
 //     vrr false
 // }
+// for screen flickering issue, comment if not actually required
 output "eDP-1" {
     variable-refresh-rate on-demand=true
 }
