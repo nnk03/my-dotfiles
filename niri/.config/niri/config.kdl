@@ -87,6 +87,13 @@ input {
 // Find more information on the wiki:
 // https://yalter.github.io/niri/Configuration:-Outputs
 // Remember to uncomment the node by removing "/-"!
+// output "eDP-1" {
+//     vrr false
+// }
+output "eDP-1" {
+    variable-refresh-rate on-demand=true
+}
+
 /-output "eDP-1" {
     // Uncomment this line to disable this output.
     // off
@@ -293,6 +300,8 @@ layout {
 // spawn-at-startup "waybar"
 spawn-at-startup "kitty"
 spawn-at-startup "calibre"
+
+// spawn-at-startup "niri" "msg" "output" "eDP-1" "vrr" "off"
 
 // start clipboard manager
 spawn-sh-at-startup "cliphist wipe && wl-paste --type text --watch cliphist store"
