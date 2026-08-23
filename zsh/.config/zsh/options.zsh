@@ -116,3 +116,22 @@ zle     -N             sesh-sessions
 bindkey -M emacs '\es' sesh-sessions
 bindkey -M vicmd '\es' sesh-sessions
 bindkey -M viins '\es' sesh-sessions
+
+# Save open PDFs using lsof (handles spaces and long file paths)
+zathura-save() {
+  local session_file="${1:-$HOME/.zathura_session}"
+  lsof -c zathura 2>/dev/null | grep -i '\.pdf$' | awk '{$1=$2=$3=$4=$5=$6=$7=$8=""; print substr($0, 9)}' > "$session_file"
+  echo "Saved $(wc -l < "$session_file") PDF(s) to $session_file"
+}
+
+# Restore all PDFs line-by-line
+zathura-restore() {
+  local session_file="${1:-$HOME/.zathura_session}"
+  if [[ -f "$session_file" ]]; then
+    while IFS= read -r file; do
+      [[ -f "$file" ]] && zathura "$file" &>/dev/null &
+    done < "$session_file"
+  else
+    echo "Session file not found: $session_file"
+  fi
+}
