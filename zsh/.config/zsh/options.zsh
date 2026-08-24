@@ -147,3 +147,22 @@ zathura-restore() {
     fi
   done < "$session_file"
 }
+
+mknotes-dir() {
+    if [ -z "$1" ]; then
+        echo "Error: Directory name required."
+        echo "Usage: mknotes-dir <directory_name>"
+        return 1
+    fi
+
+    local target_dir="$1"
+    local template_dir="$HOME/my-dotfiles/latex_template"
+
+    if [ -e "$target_dir" ]; then
+        echo "Error: '$target_dir' already exists in the current directory."
+        return 1
+    fi
+
+    mkdir "$target_dir" && cp -r "$template_dir/." "$target_dir/"
+    echo "Created '$target_dir' and copied LaTeX template files."
+}
