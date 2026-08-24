@@ -127,3 +127,10 @@ some changes were done in ~/.p10k.zsh
   typeset -g POWERLEVEL9K_DIR_ANCHOR_BOLD=true
 
 ```
+
+# LaTeX Template
+
+
+The LaTeX template directory is a clone of [https://github.com/SeniorMars/dotfiles/tree/main](https://github.com/SeniorMars/dotfiles/tree/main)
+
+https://castel.dev/post/lecture-notes-1/
