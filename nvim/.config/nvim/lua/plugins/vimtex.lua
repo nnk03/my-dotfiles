@@ -12,6 +12,7 @@ return {
       vim.g.vimtex_version_check = 0
 
       -- PDF viewer setup for Wayland / Niri
-      vim.g.vimtex_view_method = "zathura"
+      -- vim.g.vimtex_view_method = "zathura"
+      vim.g.vimtex_view_method = "zathura_simple"
    end,
 }
