@@ -124,14 +124,26 @@ zathura-save() {
   echo "Saved $(wc -l < "$session_file") PDF(s) to $session_file"
 }
 
-# Restore all PDFs line-by-line
 zathura-restore() {
   local session_file="${1:-$HOME/.zathura_session}"
-  if [[ -f "$session_file" ]]; then
-    while IFS= read -r file; do
-      [[ -f "$file" ]] && zathura "$file" &>/dev/null &
-    done < "$session_file"
-  else
+
+  if [[ ! -f "$session_file" ]]; then
     echo "Session file not found: $session_file"
+    return 1
   fi
+
+  # Get currently open files into a temporary list
+  local currently_open
+  currently_open="$(lsof -c zathura 2>/dev/null | grep -i '\.pdf$' | awk '{$1=$2=$3=$4=$5=$6=$7=$8=""; print substr($0, 9)}')"
+
+  while IFS= read -r file; do
+    [[ -z "$file" || ! -f "$file" ]] && continue
+
+    # Check if the file path is already in the running instances list
+    if echo "$currently_open" | grep -Fqx "$file"; then
+      echo "Skipping already open: $file"
+    else
+      zathura "$file" &>/dev/null &
+    fi
+  done < "$session_file"
 }
