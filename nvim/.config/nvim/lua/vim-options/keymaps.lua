@@ -31,6 +31,14 @@ keymap.set("n", "<leader>;", function()
 	end
 end, { desc = "Add semicolon at end of line (if not present)" })
 
+-- Add double backslash at end of line (LaTeX)
+vim.keymap.set("n", "<leader>\\", function()
+    local line = vim.api.nvim_get_current_line()
+    if not line:match("\\\\%s*$") then
+        vim.api.nvim_set_current_line(line .. " \\\\")
+    end
+end, { desc = "Add double backslash at end of line (LaTeX)" })
+
 -- Add comma at the end
 keymap.set("n", "<leader>,", function()
 	local line = vim.api.nvim_get_current_line()
