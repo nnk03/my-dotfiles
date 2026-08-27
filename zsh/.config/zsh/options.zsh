@@ -166,3 +166,41 @@ mknotes-dir() {
     mkdir "$target_dir" && cp -r "$template_dir/." "$target_dir/"
     echo "Created '$target_dir' and copied LaTeX template files."
 }
+
+add_gitlab_origin() {
+    local target_dir="${1:-.}"
+    local remote_name="gitlab-origin"
+
+    if [ ! -d "$target_dir" ]; then
+        echo "Error: Directory '$target_dir' does not exist." >&2
+        return 1
+    fi
+
+    # Execute in a subshell so your main shell directory doesn't change
+    (
+        cd "$target_dir" || exit 1
+
+        if ! git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+            echo "Error: '$target_dir' is not a Git repository." >&2
+            exit 1
+        fi
+
+        if git remote | grep -q "^${remote_name}$"; then
+            echo "Error: Remote '${remote_name}' already exists. Aborting." >&2
+            exit 1
+        fi
+
+        local old_url repo_name new_url
+        old_url=$(git remote get-url origin 2>/dev/null)
+        if [ -z "$old_url" ]; then
+            echo "Error: Remote 'origin' not found to extract repo name." >&2
+            exit 1
+        fi
+
+        repo_name=$(basename -s .git "$old_url")
+        new_url="git@gitlab.com:nnk03/${repo_name}.git"
+
+        git remote add "$remote_name" "$new_url"
+        echo "Added remote '${remote_name}' ($new_url) to $(pwd)"
+    )
+}
