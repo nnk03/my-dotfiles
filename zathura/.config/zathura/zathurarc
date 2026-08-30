@@ -1,0 +1,25 @@
+# include "./themes/catppuccin-mocha"
+
+# --- Clipboard & System Integration ---
+set selection-clipboard clipboard  # Auto-copy text selections to system clipboard
+
+# # --- UI Tweaks ---
+# set statusbar-h-padding 10
+# set statusbar-v-padding 10
+# set page-padding 6
+# set show-recent 10
+#
+# # --- Search & Behavior ---
+# set search-hadjust true
+# set adjust-open "width"            # Default open mode: fit to width
+#
+# # --- Highlighting & Recolor (Dark Mode Settings) ---
+# set recolor "false"                 # Set true to start in dark mode by default
+# set recolor-keephue "true"          # Preserve image colors in dark mode
+# set recolor-lightcolor "#1e1e2e"    # Catppuccin Mocha Background
+# set recolor-darkcolor "#cdd6f4"     # Catppuccin Mocha Text
+#
+# # --- Custom Keybindings ---
+# map u scroll half-up
+# map d scroll half-down
+# map [normal] <C-i> recalculate
