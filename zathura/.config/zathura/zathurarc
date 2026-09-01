@@ -18,5 +18,5 @@ set recolor-lightcolor "#1e1e2e"   # Dark background
 set recolor-darkcolor "#cdd6f4"    # Light text
 
 # --- Custom Keybindings ---
-map u scroll half-up
-map d scroll half-down
+# map u scroll half-up
+# map d scroll half-down
