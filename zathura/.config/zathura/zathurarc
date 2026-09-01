@@ -8,7 +8,7 @@ set statusbar-h-padding 10
 set statusbar-v-padding 10
 
 # --- Search & Behavior ---
-set search-hadjust true
+set search-hadjust true # so that search results appear in the centre of the page
 set adjust-open "width"            # Fit page width on open
 
 # --- Recolor / Dark Mode Settings ---
