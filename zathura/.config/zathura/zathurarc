@@ -4,12 +4,12 @@
 set selection-clipboard clipboard  # Auto-copy text selections to system clipboard
 
 # --- UI Tweaks ---
-set statusbar-h-padding 10
-set statusbar-v-padding 10
+# set statusbar-h-padding 10
+# set statusbar-v-padding 10
 
 # --- Search & Behavior ---
 set search-hadjust true # so that search results appear in the centre of the page
-set adjust-open "width"            # Fit page width on open
+# set adjust-open "width"            # Fit page width on open
 
 # --- Recolor / Dark Mode Settings ---
 set recolor false                  # Set true to start in dark mode
