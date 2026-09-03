@@ -1,4 +1,9 @@
 
+# Gemini Chats during configuration
+[https://share.gemini.google/nf8CNBveXmJX](https://share.gemini.google/nf8CNBveXmJX)
+
+
+
 # On fedora
 GRUB file example, not nvidia-drm.modeset=1 if having nvidia graphics card
 ```
