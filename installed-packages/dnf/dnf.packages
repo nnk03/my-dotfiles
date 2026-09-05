@@ -7325,6 +7325,7 @@ yyjson
 zathura
 zathura-djvu
 zathura-pdf-mupdf
+zathura-pdf-poppler
 zchunk-libs
 zenity
 zeromq

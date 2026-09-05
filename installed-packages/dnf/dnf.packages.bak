@@ -383,7 +383,6 @@ device-mapper-persistent-data
 dgop
 diffutils
 distribution-gpg-keys
-djview4
 djvulibre-libs
 dmidecode
 dms
@@ -7324,6 +7323,7 @@ yelp-libs
 yelp-xsl
 yyjson
 zathura
+zathura-djvu
 zathura-pdf-mupdf
 zchunk-libs
 zenity
