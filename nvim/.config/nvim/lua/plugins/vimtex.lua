@@ -1,6 +1,7 @@
 return {
    "lervag/vimtex",
    lazy = false,
+   -- tag = "v2.17",
    init = function()
       -- vim.g.vimtex_indent_ignored_envs = { 'document' }
 

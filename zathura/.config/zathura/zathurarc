@@ -14,9 +14,17 @@ set search-hadjust true # so that search results appear in the centre of the pag
 # --- Recolor / Dark Mode Settings ---
 set recolor false                  # Set true to start in dark mode
 set recolor-keephue true           # Preserve original image/photo colors
-set recolor-lightcolor "#1e1e2e"   # Dark background
-set recolor-darkcolor "#cdd6f4"    # Light text
+# set recolor-lightcolor "#1e1e2e"   # Dark background
+# set recolor-darkcolor "#cdd6f4"    # Light text
 
 # --- Custom Keybindings ---
 # map u scroll half-up
 # map d scroll half-down
+
+# Define dark mode colors (Catppuccin Macchiato style)
+set recolor-lightcolor "#1e1e2e"    # Background
+set recolor-darkcolor  "#cdd6f4"    # Text
+
+# Keep original image colors untouched when recoloring
+set recolor-keep-paper "false"
+set recolor-reverse-video "true"
