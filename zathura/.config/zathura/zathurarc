@@ -25,6 +25,3 @@ set recolor-keephue true           # Preserve original image/photo colors
 set recolor-lightcolor "#1e1e2e"    # Background
 set recolor-darkcolor  "#cdd6f4"    # Text
 
-# Keep original image colors untouched when recoloring
-set recolor-keep-paper "false"
-set recolor-reverse-video "true"
