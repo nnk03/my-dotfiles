@@ -40,3 +40,8 @@ alias pipe_exit_code='echo "${pipestatus[@]}"'
 # also can be done by `export MANPAGER="bat -plman"`
 # `bat -plman` same as `bat -p -l man`
 alias bman='MANPAGER="bat -plman" man'
+
+# Latex aliases
+alias lt='latexmk'
+alias ltc='latexmk -c'
+alias ltC='latexmk -C'
