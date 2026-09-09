@@ -8,7 +8,7 @@ vim.api.nvim_create_autocmd("BufWritePost", {
    pattern = { "*.cpp", "*.c", "*.h", "*.ino" },
    callback = function()
       -- Only run if skip_clang_format is NOT set for this buffer
-      if not vim.b.skip_rust_format then
+      if not vim.b.skip_clang_format then
          vim.cmd("silent !clang-format -i " .. vim.fn.expand("%"))
          -- Force a redraw/reload so you see the changes immediately
          vim.cmd("checktime")
